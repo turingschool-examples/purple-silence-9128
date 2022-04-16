@@ -1,0 +1,5 @@
+<h1><%= @library.name %>'s authors:</h1>
+<br/>
+<% @authors.each do |auth| %>
+  <h2><%= auth.name %></h2>
+<% end %>

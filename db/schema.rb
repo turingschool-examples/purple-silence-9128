@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2022_04_15_234852) do
 
   create_table "authors", force: :cascade do |t|
     t.string "name"
-    t.bigint "age"
+    t.date "birth_year"
   end
 
   create_table "book_authors", force: :cascade do |t|

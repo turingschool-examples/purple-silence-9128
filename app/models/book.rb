@@ -5,6 +5,6 @@ class Book < ApplicationRecord
   has_many :authors, through: :book_authors
 
   def avg_author_age
-    authors.average(:age).to_i
+    authors.sum(&:age) / authors.length
   end
 end

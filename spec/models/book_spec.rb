@@ -30,15 +30,15 @@ RSpec.describe Book, type: :model do
 
       @author_1 = Author.create!(
         name: "Smart Happy Guy",
-        age: 35
+        birth_year: DateTime.new(1987)
       )
       @author_2 = Author.create!(
         name: "Great Silly Guy",
-        age: 20
+        birth_year: DateTime.new(2002)
       )
       @author_3 = Author.create!(
         name: "Not A Good Guy",
-        age: 125
+        birth_year: DateTime.new(1887)
       )
 
       @book_author_1 = BookAuthor.create!(
@@ -63,7 +63,7 @@ RSpec.describe Book, type: :model do
       it '#avg_author_age claculates avg author age' do
         expect(@book_1.avg_author_age).to eq(27)
         expect(@book_2.avg_author_age).to eq(20)
-        expect(@book_3.avg_author_age).to eq(125)
+        expect(@book_3.avg_author_age).to eq(135)
       end
     end
   end

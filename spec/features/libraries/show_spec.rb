@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'invoice show page' do
+describe 'library show page' do
   before do
     @library_1 = Library.create!(name: "Library One")
     @library_2 = Library.create!(name: "Free Book Place")
@@ -20,15 +20,15 @@ describe 'invoice show page' do
 
     @author_1 = Author.create!(
       name: "Smart Happy Guy",
-      age: 35
+      birth_year: DateTime.new(1987)
     )
     @author_2 = Author.create!(
       name: "Great Silly Guy",
-      age: 20
+      birth_year: DateTime.new(2002)
     )
     @author_3 = Author.create!(
       name: "Not A Good Guy",
-      age: 125
+      birth_year: DateTime.new(1887)
     )
 
     @book_author_1 = BookAuthor.create!(
@@ -52,11 +52,6 @@ describe 'invoice show page' do
   end
 
   it 'Shows the library name and link to the author index' do
-    # Story 3 of 3
-    # As a visitor
-    # When I visit a Library's show page
-    # I see the name of that library
-    # and i see a link to view all of the authors that have written books that the library has
     expect(page).to have_content('Library One')
     expect(page).not_to have_content('Free Book Place')
 

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'book show page' do
+describe 'author index page' do
   before do
     @library_1 = Library.create!(name: "Library One")
     @library_2 = Library.create!(name: "Free Book Place")
@@ -48,37 +48,16 @@ describe 'book show page' do
       author_id: @author_3.id,
     )
 
-    visit "/books/#{@book_1.id}"
+    visit "/libraries/#{@library_1.id}/authors"
   end
 
-  it 'shows the books title and genre' do
-    expect(page).to have_content("Book On Livin'")
-    expect(page).to have_content("Self Help")
+  it 'shows a list of unique authors associated with that library' do
+    # When I click on that link
+    # I am taken to a Library's authors index page
+    # and I can see a unique list of names of all the authors that this library has
+    expect(page).to have_content("Smart Happy Guy", count: 1)
+    expect(page).to have_content("Great Silly Guy", count: 1)
 
-    expect(page).not_to have_content("Book On Dyin'")
-    expect(page).not_to have_content("Horror")
-  end
-
-  it 'shows the books authors names' do
-    within('#authors') do
-      expect(page).to have_content("Smart Happy Guy")
-      expect(page).to have_content("Great Silly Guy")
-
-      expect(page).not_to have_content("Not A Good Guy")
-    end
-  end
-
-  it 'shows the name of the library the book belongs to' do
-    within('#library') do
-      expect(page).to have_content("Found at: Library One")
-      expect(page).not_to have_content("Found at: Free Book Place")
-    end
-  end
-
-  it 'shows the books authors average ages' do
-    expect(page).to have_content("Average Author Age: 27")
-
-    expect(page).not_to have_content("Average Author Age: 20")
-    expect(page).not_to have_content("Average Author Age: 135")
+    expect(page).not_to have_content("Not A Good Guy")
   end
 end
