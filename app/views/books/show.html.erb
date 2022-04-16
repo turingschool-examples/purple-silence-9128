@@ -2,8 +2,16 @@
 
 <h3> Genre: <%= @book.genre %> </h3>
 <hr/>
-<h2><%= @book.title %>'s Authors:</h2>
-<% @book.authors.each do |auth| %>
-  <p><strong><%= auth.name %></strong></p>
-<% end %>
-<h3>Average Author Age: <%= @book.avg_author_age %></h3>
+
+<div id="library">
+  <h3>Found at: <%= @book.library.name %></h3>
+</div>
+<hr/>
+
+<div id="authors">
+  <h2><%= @book.title %>'s Authors:</h2>
+  <% @book.authors.each do |auth| %>
+    <p><strong><%= auth.name %></strong></p>
+  <% end %>
+  <h3>Average Author Age: <%= @book.avg_author_age %></h3>
+</div>

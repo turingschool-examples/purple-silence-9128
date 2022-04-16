@@ -59,16 +59,26 @@ describe 'invoice show page' do
     expect(page).not_to have_content("Horror")
   end
 
-  it 'shows the books authors and their average ages' do
-    expect(page).to have_content("Smart Happy Guy")
-    expect(page).to have_content("Great Silly Guy")
+  it 'shows the name of the library the book belongs to' do
+    within('#library') do
+      expect(page).to have_content("Found at: Library One")
+      expect(page).not_to have_content("Found at: Free Book Place")
+    end
+  end
+
+  it 'shows the books authors names' do
+    within('#authors') do
+      expect(page).to have_content("Smart Happy Guy")
+      expect(page).to have_content("Great Silly Guy")
+
+      expect(page).not_to have_content("Not A Good Guy")
+    end
+  end
+
+  it 'shows the books authors average ages' do
     expect(page).to have_content("Average Author Age: 27")
 
-    expect(page).not_to have_content("Not A Good Guy")
+    expect(page).not_to have_content("Average Author Age: 20")
+    expect(page).not_to have_content("Average Author Age: 125")
   end
-  # Story 1 of 3
-  # As a visitor, when I visit a book's show page
-  # I see the book's name and genre
-  # And I see a list of authors for that book.
-  # And I see the name of the Library it belongs to
 end
