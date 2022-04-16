@@ -1,0 +1,18 @@
+<h1><%= @book.title %></h1>
+<div id="book">
+  <tr>
+    <td><strong>Genre: </strong><%= @book.genre %></td>
+  </tr>
+</div>
+
+<h3>Book Authors</h3>
+<% @authors.each do |author| %>
+  <div id="author-<%= author.id %>">
+    <p><%= author.name %>
+  </div>
+<% end %>
+
+<div id="book-library">
+  <h3>Libraries name</h3>
+  <%= @book.library.name %>
+</div>
