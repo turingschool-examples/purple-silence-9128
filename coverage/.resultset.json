@@ -241,10 +241,17 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
       "/Users/sandiszthieme/turing/2module/independent_challenges/purple-silence-9128/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/2module/independent_challenges/purple-silence-9128/app/helpers/books_controller_helper.rb": {
         "lines": [
           1,
           null
@@ -277,14 +284,6 @@
           null
         ]
       },
-      "/Users/sandiszthieme/turing/2module/independent_challenges/purple-silence-9128/app/models/book_author.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/sandiszthieme/turing/2module/independent_challenges/purple-silence-9128/app/models/author.rb": {
         "lines": [
           1,
@@ -298,8 +297,31 @@
           1,
           null
         ]
+      },
+      "/Users/sandiszthieme/turing/2module/independent_challenges/purple-silence-9128/app/models/book_author.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/2module/independent_challenges/purple-silence-9128/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sandiszthieme/turing/2module/independent_challenges/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650067772
+    "timestamp": 1650068699
   }
 }
