@@ -51,11 +51,20 @@ describe 'invoice show page' do
     visit "/books/#{@book_1.id}"
   end
 
-  it 'shows the books name and genre' do
+  it 'shows the books title and genre' do
     expect(page).to have_content("Book On Livin'")
     expect(page).to have_content("Self Help")
+
     expect(page).not_to have_content("Book On Dyin'")
     expect(page).not_to have_content("Horror")
+  end
+
+  it 'shows the books authors and their average ages' do
+    expect(page).to have_content("Smart Happy Guy")
+    expect(page).to have_content("Great Silly Guy")
+    expect(page).to have_content("Average Author Age: 27")
+
+    expect(page).not_to have_content("Not A Good Guy")
   end
   # Story 1 of 3
   # As a visitor, when I visit a book's show page
