@@ -57,6 +57,7 @@ RSpec.describe 'Library Show Page' do
             # save_and_open_page
             click_link "See All Authors Featured Here"
             expect(current_path).to eq("/libraries/#{lib.id}/authors")
+            save_and_open_page
             expect(page).to have_content('stephen king')
             expect(page).to have_content('richard bachman')
             expect(page).to have_content('guy mcauthor')

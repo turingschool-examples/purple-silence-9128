@@ -2,7 +2,7 @@ class LibraryAuthorsController < ApplicationController
 
     def index
         @library = Library.find(params[:id])
-        @books = @library.authors
+        @authors = @library.authors
     end
     
 
