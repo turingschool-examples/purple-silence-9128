@@ -14,22 +14,16 @@ RSpec.describe 'Book Show Page' do
             book_author1 = BookAuthor.create!(book: dark, author: king)
             book_author2 = BookAuthor.create!(book: dark, author: bach)
             
-            
             fake = Author.create!(name: 'fake mcfake', age: 7)
             the_stand = Book.create!(title: 'The Stand', genre: 'horror', library_id: lib.id)
             book_author3 = BookAuthor.create!(book: the_stand, author: king)
             book_author4 = BookAuthor.create!(book: the_stand, author: fake)
           
-           
             visit "/books/#{dark.id}"
             # save_and_open_page
             expect(page).to have_content("Dark Tower")
             expect(page).to have_content("fantasy")
             expect(page).to have_content("At Library: The Library")
-
-            expect(page).to_not have_content("Other Library")
-            expect(page).to_not have_content("The Stand")
-            expect(page).to_not have_content("fake mcfake")
 
             within "#author-#{king.id}" do
                 expect(page).to have_content("Author Name: stephen king")
@@ -37,6 +31,10 @@ RSpec.describe 'Book Show Page' do
             within "#author-#{bach.id}" do
                 expect(page).to have_content("Author Name: richard bachman")
             end
+
+            expect(page).to_not have_content("Other Library")
+            expect(page).to_not have_content("The Stand")
+            expect(page).to_not have_content("fake mcfake")
 
         end
 
