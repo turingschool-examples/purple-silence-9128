@@ -250,6 +250,22 @@
           null
         ]
       },
+      "/Users/jimbo/turing/2module/challenges/purple-silence-9128/spec/models/book_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/jimbo/turing/2module/challenges/purple-silence-9128/app/models/book.rb": {
         "lines": [
           1,
@@ -271,11 +287,11 @@
           null,
           1,
           1,
-          2,
+          1,
           null,
           null,
           1,
-          2,
+          1,
           null,
           null
         ]
@@ -289,6 +305,6 @@
         ]
       }
     },
-    "timestamp": 1650228325
+    "timestamp": 1650228480
   }
 }
