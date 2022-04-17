@@ -34,7 +34,9 @@ RSpec.describe Library, type: :model do
       book_author5 = BookAuthor.create!(book: time, author: pen_name)
       book_author6 = BookAuthor.create!(book: time, author: cheese)
 
-      expect(lib.authors).to eq([king, bach, guy, writer, pen_name, cheese])
+      other = Book.create!(title: 'other book', genre: 'fake', library_id: lib2.id)
+
+      expect(lib.authors).to eq(["guy mcauthor", "just somecheese", "richard bachman", "sneaky sneak", "stephen king", "writer mcbookface"])
 
     end
 
