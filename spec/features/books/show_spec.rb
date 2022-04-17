@@ -29,6 +29,10 @@ RSpec.describe 'books show page' do
       it 'and i see the name of the library it belongs to' do
         expect(page).to have_content("Library: #{@library.name}")
       end
+
+      it 'i see the average age of the authors for that book' do
+        expect(page).to have_content("Average Age of the Authors of #{@book_1.title}: 107")
+      end
     end
   end
 end
