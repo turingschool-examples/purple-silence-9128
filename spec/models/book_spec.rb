@@ -15,6 +15,7 @@ RSpec.describe Book, type: :model do
   describe 'instance methods' do
     describe '.average_age_of_authors' do
       it 'can determine the average age of authors for the book, assuming the authors are still alive' do
+        library = Library.create!(name: "Round Hill Public Library")
         book_1 = library.books.create!(title: "Slaughterhouse-Five", genre: "Science Fiction")
         book_2 = library.books.create!(title: "The Secret History", genre: "Mystery")
         author_1 = book_1.authors.create!(name: "Kurt Vonnegut", birth_year: 1922)
