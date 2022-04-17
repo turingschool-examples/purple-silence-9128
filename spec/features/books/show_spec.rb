@@ -14,9 +14,9 @@ RSpec.describe 'books show page' do
       end
 
       it 'i see the books name and genre' do
-        expect(page).to have_content(@book_1.name)
+        expect(page).to have_content(@book_1.title)
         expect(page).to have_content(@book_1.genre)
-        expect(page).not_to have_content(@book_2.name)
+        expect(page).not_to have_content(@book_2.title)
         expect(page).not_to have_content(@book_2.genre)
       end
 
