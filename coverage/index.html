@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-17T16:02:44-06:00">2022-04-17T16:02:44-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-17T16:09:37-06:00">2022-04-17T16:09:37-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -106,7 +106,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#11c503f779e3772b9e177a2e6c78e78edf35ca21" class="src_link" title="app/controllers/library_authors_controller.rb">app/controllers/library_authors_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
@@ -326,7 +326,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#18e78d4528e94d2187760b2493f35affa45e1254" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">13</td>
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
@@ -790,13 +790,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="4">
+            
             
 
             
 
-            <code class="ruby">        @library = Library.find(params[:id])</code>
+            <code class="ruby">        </code>
           </li>
         </div>
       
@@ -807,18 +807,18 @@
 
             
 
-            <code class="ruby">        @authors = @library.authors</code>
+            <code class="ruby">        @library = Library.find(params[:library_id])</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">        @authors = @library.authors</code>
           </li>
         </div>
       
@@ -829,7 +829,7 @@
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -840,12 +840,23 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -4006,13 +4017,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="6">
+            
             
 
             
 
-            <code class="ruby">  get &#39;/libraries/:id&#39;, to: &#39;libraries#show&#39;</code>
+            <code class="ruby">  # get &#39;/libraries/:id&#39;, to: &#39;libraries#show&#39;</code>
           </li>
         </div>
       
@@ -4028,18 +4039,62 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="8">
+            
             
 
             
 
-            <code class="ruby">  get &#39;/libraries/:id/authors&#39;, to: &#39;library_authors#index&#39;</code>
+            <code class="ruby">  # get &#39;/libraries/:id/authors&#39;, to: &#39;library_authors#index&#39;</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  resources :libraries, only: [:show] do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    resources :library_authors, only: [:index]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -4791,7 +4846,7 @@
 
             
 
-            <code class="ruby">            expect(current_path).to eq(&quot;/libraries/#{lib.id}/authors&quot;)</code>
+            <code class="ruby">            expect(current_path).to eq(&quot;/libraries/#{lib.id}/library_authors&quot;)</code>
           </li>
         </div>
       

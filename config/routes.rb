@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   # get '/books/:id', to: 'books#show'
   resources :books, only: [:show]
 
-  get '/libraries/:id', to: 'libraries#show'
+  # get '/libraries/:id', to: 'libraries#show'
 
-  get '/libraries/:id/authors', to: 'library_authors#index'
+  # get '/libraries/:id/authors', to: 'library_authors#index'
+
+  resources :libraries, only: [:show] do 
+    resources :library_authors, only: [:index]
+  end 
 end

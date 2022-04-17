@@ -62,7 +62,7 @@ RSpec.describe 'Library Show Page' do
             visit "/libraries/#{lib.id}"
             
             click_link "See All Authors Featured Here"
-            expect(current_path).to eq("/libraries/#{lib.id}/authors")
+            expect(current_path).to eq("/libraries/#{lib.id}/library_authors")
             
             expect(page).to have_content('stephen king')
             expect(page).to have_content('richard bachman')
