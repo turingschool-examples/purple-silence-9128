@@ -6,7 +6,11 @@
 
 <h3>Authors:</h3><br>
 <% @authors.each do |author| %>
+
+<section id="author-<%= author.id%>">
    Author Name: <%= author.name %> <br>
+</section>
+
 <% end  %>
 <br>
 
