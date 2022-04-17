@@ -6,4 +6,12 @@ class Library < ApplicationRecord
   def unique_author_names
     authors.distinct.pluck(:name)
   end
+
+  def top_3_authors
+    authors.joins(:books)
+            .select("authors.name, count(books) as book_count")
+            .group("authors.name")
+            .order(book_count: :desc)
+            .limit(3)
+  end
 end

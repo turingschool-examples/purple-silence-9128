@@ -1,3 +1,9 @@
 <h1> Library: <%= @library.name %> </h1>
 
 <%= link_to "All Authors", "/libraries/#{@library.id}/authors" %>
+
+<div id="top_3_authors">
+<% @library.top_3_authors.each do |author| %>
+  <p> <%= author.name %> </p>
+<% end %>
+</div>
