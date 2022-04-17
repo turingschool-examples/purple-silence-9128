@@ -24,6 +24,7 @@ RSpec.describe "book show page" do
   it "has the average age of authors for the book" do
     author_1 = Author.create!(name: "Douglas Adams", birth_year: 2018)
     author_2 = Author.create!(name: "Graham Chapman", birth_year: 2020)
+    author_2 = Author.create!(name: "Graham Chapman", birth_year: 2016)
     library = Library.create!(name: "DPL")
     book = Book.create!(title: "Monty Python's Guide to the Universe", genre: "Satire", library_id: library.id)
     author_book_1 = AuthorBook.create!(author_id: author_1.id, book_id: book.id)
@@ -31,6 +32,6 @@ RSpec.describe "book show page" do
     
     visit "/books/#{book.id}"
     
-    expect(page).to have_content("Average Author Age: 3")
+    expect(page).to have_content("Average Author Age: 4")
   end
 end
