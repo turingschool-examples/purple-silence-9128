@@ -250,11 +250,11 @@
           null
         ]
       },
-      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/models/author.rb": {
+      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/models/library.rb": {
         "lines": [
           1,
           1,
-          null,
+          1,
           1,
           1,
           null
@@ -262,6 +262,16 @@
       },
       "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/models/application_record.rb": {
         "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/models/book.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           1,
           1,
           null
@@ -275,15 +285,17 @@
           null
         ]
       },
-      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/models/book.rb": {
+      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/models/author.rb": {
         "lines": [
           1,
+          1,
+          null,
           1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1650239323
+    "timestamp": 1650239620
   }
 }
