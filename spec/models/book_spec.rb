@@ -8,6 +8,7 @@ RSpec.describe Book, type: :model do
   
   describe 'relationships' do
     it { should belong_to :library }
-    it { should have_many :authors }
+    it { should have_many :book_authors }
+    it { should have_many(:authors).through(:book_authors) }
   end 
 end
