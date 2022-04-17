@@ -11,7 +11,7 @@ RSpec.describe 'libraries show page' do
         @author_2 = @book_1.authors.create!(name: "Kilgore Trout", birth_year: 1908)
         @author_3 = @book_2.authors.create!(name: "Donna Tartt", birth_year: 1963)
 
-        @library_2 = Library.create!(name: "Round Hill Public Library")
+        @library_2 = Library.create!(name: "Purcelville Public Library")
         @book_3 = @library_2.books.create!(title: "The Lord of the Rings", genre: "Fantasy")
         @author_4 = @book_3.authors.create!(name: "The Lord of the Rings", birth_year: 1892)
         visit "/libraries/#{@library_1.id}"
