@@ -313,6 +313,33 @@
           null
         ]
       },
+      "/Users/andrewspeth/turing/2module/purple-silence-9128/spec/models/author_book_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/andrewspeth/turing/2module/purple-silence-9128/app/models/author_book.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/andrewspeth/turing/2module/purple-silence-9128/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/andrewspeth/turing/2module/purple-silence-9128/spec/models/author_spec.rb": {
         "lines": [
           1,
@@ -335,13 +362,6 @@
           1,
           1,
           null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/andrewspeth/turing/2module/purple-silence-9128/app/models/application_record.rb": {
-        "lines": [
           1,
           1,
           null
@@ -456,14 +476,6 @@
           null
         ]
       },
-      "/Users/andrewspeth/turing/2module/purple-silence-9128/app/models/author_book.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/andrewspeth/turing/2module/purple-silence-9128/app/controllers/books_controller.rb": {
         "lines": [
           1,
@@ -498,6 +510,6 @@
         ]
       }
     },
-    "timestamp": 1650214835
+    "timestamp": 1650215776
   }
 }
