@@ -33,7 +33,7 @@ RSpec.describe 'Book Show Page' do
             dark = Book.create!(title: 'Dark Tower', genre: 'fantasy', library_id: lib.id)
             book_author1 = BookAuthor.create!(book: dark, author: king)
             book_author2 = BookAuthor.create!(book: dark, author: bach)
-            
+            save_and_open_page
             visit "/books/#{dark.id}"
             expect(page).to have_content("Authors Average Age: 66")
         end
