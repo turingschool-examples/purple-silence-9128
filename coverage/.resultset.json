@@ -286,6 +286,33 @@
           null
         ]
       },
+      "/Users/andrewspeth/turing/2module/purple-silence-9128/spec/features/library_authors/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/andrewspeth/turing/2module/purple-silence-9128/spec/models/author_spec.rb": {
         "lines": [
           1,
@@ -405,7 +432,7 @@
           1,
           null,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -446,12 +473,12 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1650214249
+    "timestamp": 1650214596
   }
 }

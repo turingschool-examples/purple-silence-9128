@@ -4,6 +4,6 @@ class Library < ApplicationRecord
   has_many :authors, through: :books
 
   def unique_author_names
-    authors.distinct
+    authors.distinct.pluck(:name)
   end
 end
