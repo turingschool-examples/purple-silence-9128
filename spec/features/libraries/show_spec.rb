@@ -30,9 +30,9 @@ RSpec.describe 'libraries show page' do
 
         expect(current_path).to eq("/libraries/#{@library_1.id}/authors")
 
-        expect(page).to have_content(@author_1.name)
-        expect(page).to have_content(@author_2.name)
-        expect(page).to have_content(@author_3.name)
+        expect(page).to have_content(@author_1.name).once
+        expect(page).to have_content(@author_2.name).once
+        expect(page).to have_content(@author_3.name).once
         expect(page).not_to have_content(@author_4.name)
       end
     end
