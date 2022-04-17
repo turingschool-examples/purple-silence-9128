@@ -29,6 +29,7 @@ RSpec.describe 'Library Show Page' do
             # save_and_open_page
             expect(page).to have_content("The Library")
             expect(page).to have_link("See All Authors Featured Here")
+            expect(page).to_not have_content("Other Library")
         end
 
         it 'clicking link brings to that lib lib_authors index, unique authors shown' do
@@ -53,17 +54,23 @@ RSpec.describe 'Library Show Page' do
             book_author5 = BookAuthor.create!(book: time, author: pen_name)
             book_author6 = BookAuthor.create!(book: time, author: cheese)
 
+            other = Book.create!(title: 'other book', genre: 'fake', library_id: lib2.id)
+            fake = Author.create!(name: 'fake mcauthorpants', age: 7)
+            book_author5 = BookAuthor.create!(book: other, author: fake)
+
+
             visit "/libraries/#{lib.id}"
-            # save_and_open_page
+            
             click_link "See All Authors Featured Here"
             expect(current_path).to eq("/libraries/#{lib.id}/authors")
-            save_and_open_page
+            
             expect(page).to have_content('stephen king')
             expect(page).to have_content('richard bachman')
             expect(page).to have_content('guy mcauthor')
             expect(page).to have_content('writer mcbookface')
             expect(page).to have_content('just somecheese')
-   
+            
+            expect(page).to_not have_content("#{fake.name}")
         end         
 
 
