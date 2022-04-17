@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-17T11:16:16-06:00">2022-04-17T11:16:16-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-17T11:18:27-06:00">2022-04-17T11:18:27-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>175</b> relevant lines,
-    <span class="green"><b>175</b> lines covered</span> and
+    <b>176</b> relevant lines,
+    <span class="green"><b>176</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -392,11 +392,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#e3dedd5a8ffda4d8f130b1961e905c4172b6aeac" class="src_link" title="spec/models/library_spec.rb">spec/models/library_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">30</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">20</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">21</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.10</td>
+            <td class="cell--number">1.14</td>
             
           </tr>
         
@@ -5268,8 +5268,8 @@
     
 
     <div class="t-line-summary">
-      <b>20</b> relevant lines.
-      <span class="green"><b>20</b> lines covered</span> and
+      <b>21</b> relevant lines.
+      <span class="green"><b>21</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -5380,13 +5380,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="10">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    it { should have_many(:authors).through :books }</code>
           </li>
         </div>
       
@@ -5397,18 +5397,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="12">
+            
             
 
             
 
-            <code class="ruby">  describe &quot;instance methods&quot; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -5419,7 +5419,7 @@
 
             
 
-            <code class="ruby">    it &quot;#unique_author_names&quot; do</code>
+            <code class="ruby">  describe &quot;instance methods&quot; do</code>
           </li>
         </div>
       
@@ -5430,7 +5430,7 @@
 
             
 
-            <code class="ruby">      author_1 = Author.create!(name: &quot;Douglas Adams&quot;, birth_year: 1952)</code>
+            <code class="ruby">    it &quot;#unique_author_names&quot; do</code>
           </li>
         </div>
       
@@ -5441,7 +5441,7 @@
 
             
 
-            <code class="ruby">      author_2 = Author.create!(name: &quot;Graham Chapman&quot;, birth_year: 1954)</code>
+            <code class="ruby">      author_1 = Author.create!(name: &quot;Douglas Adams&quot;, birth_year: 1952)</code>
           </li>
         </div>
       
@@ -5452,7 +5452,7 @@
 
             
 
-            <code class="ruby">      library_1 = Library.create!(name: &quot;DPL&quot;)</code>
+            <code class="ruby">      author_2 = Author.create!(name: &quot;Graham Chapman&quot;, birth_year: 1954)</code>
           </li>
         </div>
       
@@ -5463,7 +5463,7 @@
 
             
 
-            <code class="ruby">      book_1 = Book.create!(title: &quot;Monty Python&#39;s Guide to the Universe&quot;, genre: &quot;Satire&quot;, library_id: library_1.id)</code>
+            <code class="ruby">      library_1 = Library.create!(name: &quot;DPL&quot;)</code>
           </li>
         </div>
       
@@ -5474,7 +5474,7 @@
 
             
 
-            <code class="ruby">      author_book_1 = AuthorBook.create!(author_id: author_1.id, book_id: book_1.id)</code>
+            <code class="ruby">      book_1 = Book.create!(title: &quot;Monty Python&#39;s Guide to the Universe&quot;, genre: &quot;Satire&quot;, library_id: library_1.id)</code>
           </li>
         </div>
       
@@ -5485,29 +5485,29 @@
 
             
 
+            <code class="ruby">      author_book_1 = AuthorBook.create!(author_id: author_1.id, book_id: book_1.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">      author_book_2 = AuthorBook.create!(author_id: author_2.id, book_id: book_1.id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
             
 
             <code class="ruby">      </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="21">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      author_3 = Author.create!(name: &quot;Douglas Adams&quot;, birth_year: 1952)</code>
           </li>
         </div>
       
@@ -5518,7 +5518,7 @@
 
             
 
-            <code class="ruby">      author_4 = Author.create!(name: &quot;Graham Chapman&quot;, birth_year: 1954)</code>
+            <code class="ruby">      author_3 = Author.create!(name: &quot;Douglas Adams&quot;, birth_year: 1952)</code>
           </li>
         </div>
       
@@ -5529,7 +5529,7 @@
 
             
 
-            <code class="ruby">      book = Book.create!(title: &quot;And now for something completely different&quot;, genre: &quot;Satire&quot;, library_id: library_1.id)</code>
+            <code class="ruby">      author_4 = Author.create!(name: &quot;Graham Chapman&quot;, birth_year: 1954)</code>
           </li>
         </div>
       
@@ -5540,7 +5540,7 @@
 
             
 
-            <code class="ruby">      author_book_1 = AuthorBook.create!(author_id: author_3.id, book_id: book.id)</code>
+            <code class="ruby">      book = Book.create!(title: &quot;And now for something completely different&quot;, genre: &quot;Satire&quot;, library_id: library_1.id)</code>
           </li>
         </div>
       
@@ -5551,12 +5551,23 @@
 
             
 
+            <code class="ruby">      author_book_1 = AuthorBook.create!(author_id: author_3.id, book_id: book.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">      author_book_2 = AuthorBook.create!(author_id: author_4.id, book_id: book.id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="27">
             
             
 
@@ -5567,7 +5578,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="27">
+          <li class="covered" data-hits="1" data-linenumber="28">
             <span class="hits">1</span>
             
 
@@ -5578,7 +5589,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -5589,7 +5600,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 
@@ -5600,7 +5611,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="30">
+          <li class="never" data-hits="" data-linenumber="31">
             
             
 

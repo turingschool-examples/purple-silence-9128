@@ -7,6 +7,7 @@ RSpec.describe Library, type: :model do
   
   describe 'relationships' do
     it { should have_many :books }
+    it { should have_many(:authors).through :books }
   end
 
   describe "instance methods" do
