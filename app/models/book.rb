@@ -8,4 +8,8 @@ class Book < ApplicationRecord
   def author_names
     authors.pluck(:name)
   end
+
+  def average_author_age
+    Time.now.year - authors.average(:birth_year)
+  end
 end
