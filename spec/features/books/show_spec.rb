@@ -26,15 +26,15 @@ RSpec.describe 'Book Show Page' do
         end
 
         it 'Has the average age of the authors' do
-                       lib = Library.create!(name: 'The Library')
+            lib = Library.create!(name: 'The Library')
             lib2 = Library.create!(name: 'Other Library')
             king = Author.create!(name: 'stephen king', age: 77)
             bach = Author.create!(name: 'richard bachman', age: 55)
             dark = Book.create!(title: 'Dark Tower', genre: 'fantasy', library_id: lib.id)
             book_author1 = BookAuthor.create!(book: dark, author: king)
             book_author2 = BookAuthor.create!(book: dark, author: bach)
-            save_and_open_page
             visit "/books/#{dark.id}"
+            # save_and_open_page
             expect(page).to have_content("Authors Average Age: 66")
         end
 

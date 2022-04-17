@@ -251,20 +251,11 @@
           null
         ]
       },
-      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/models/book.rb": {
+      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/models/library.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -275,11 +266,29 @@
           null
         ]
       },
-      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/models/library.rb": {
+      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/models/author.rb": {
         "lines": [
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/models/book.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -293,16 +302,27 @@
           null
         ]
       },
-      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/models/author.rb": {
+      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/controllers/books_controller.rb": {
         "lines": [
           1,
-          1,
-          1,
           null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       }
     },
-    "timestamp": 1650229167
+    "timestamp": 1650229229
   }
 }
