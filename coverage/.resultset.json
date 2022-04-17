@@ -242,6 +242,8 @@
           1,
           null,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -284,8 +286,8 @@
           1,
           null,
           1,
-          2,
-          2,
+          0,
+          0,
           null,
           null,
           null,
@@ -302,13 +304,12 @@
           null
         ]
       },
-      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/controllers/books_controller.rb": {
+      "/Users/alexrandolph/turing/2module/ICs/purple-silence-9128/app/controllers/libraries_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          2,
-          2,
+          1,
           null,
           null,
           null,
@@ -323,6 +324,6 @@
         ]
       }
     },
-    "timestamp": 1650229229
+    "timestamp": 1650229934
   }
 }

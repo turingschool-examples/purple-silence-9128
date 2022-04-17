@@ -26,7 +26,7 @@ RSpec.describe 'Library Show Page' do
             book_author6 = BookAuthor.create!(book: time, author: cheese)
 
             visit "/libraries/#{lib.id}"
-
+            # save_and_open_page
             expect(page).to have_content("The Library")
             expect(page).to have_link("See All Authors Featured Here")
         end
