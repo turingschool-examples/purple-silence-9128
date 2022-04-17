@@ -9,8 +9,8 @@ class Library < ApplicationRecord
 
   def top_3_authors
     authors.joins(:books)
-            .select("authors.name, count(books) as book_count")
-            .group("authors.name")
+            .select("authors.*, count(books) as book_count")
+            .group("authors.id")
             .order(book_count: :desc)
             .limit(3)
   end
