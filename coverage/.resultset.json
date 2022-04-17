@@ -242,6 +242,10 @@
           1,
           null,
           1,
+          null,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -273,11 +277,11 @@
           null,
           1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null
         ]
@@ -398,6 +402,11 @@
           1,
           1,
           1,
+          1,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -423,8 +432,26 @@
           1,
           null
         ]
+      },
+      "/Users/andrewspeth/turing/2module/purple-silence-9128/app/controllers/libraries_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/andrewspeth/turing/2module/purple-silence-9128/app/controllers/library_authors_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1650213145
+    "timestamp": 1650214249
   }
 }

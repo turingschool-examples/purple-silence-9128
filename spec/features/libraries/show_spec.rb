@@ -12,7 +12,7 @@ RSpec.describe "library show page" do
     author_3 = Author.create!(name: "Douglas Adams", birth_year: 1952)
     author_4 = Author.create!(name: "Graham Chapman", birth_year: 1954)
     library_2 = Library.create!(name: "APL")
-    book = Book.create!(title: "Monty Python's Guide to the Universe", genre: "Satire", library_id: library_2.id)
+    book = Book.create!(title: "And now for something completely different", genre: "Satire", library_id: library_2.id)
     author_book_1 = AuthorBook.create!(author_id: author_3.id, book_id: book.id)
     author_book_2 = AuthorBook.create!(author_id: author_4.id, book_id: book.id)
     
