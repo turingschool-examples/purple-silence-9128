@@ -1,0 +1,10 @@
+<h1><%= "#{@library.name} Show Page" %></h1>
+
+<%= "Most popular authors:" %>
+<div id="popular-<%= @library.id %>">
+  <% @library.popular_authors.each do |author_names| %>
+    <%= author_names %><br>
+  <% end %>
+</div>
+
+<%= link_to "View All Authors", "/libraries/#{@library.id}/authors" %>
