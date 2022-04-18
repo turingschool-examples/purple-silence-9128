@@ -1,0 +1,11 @@
+<h1><%= @book.title %></h1>
+Genre: <%= @book.genre%>
+<br>
+<h3>Authors:</h3>
+<ul>
+  <% @book.authors.each do |author| %>
+    <li><%= author.name %></li>
+  <% end %>
+</ul>
+Authors Average Age
+<%= @book.average_author_age %>
