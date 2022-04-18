@@ -250,7 +250,7 @@
           null
         ]
       },
-      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/app/models/author_book.rb": {
+      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/app/models/library.rb": {
         "lines": [
           1,
           1,
@@ -265,15 +265,13 @@
           null
         ]
       },
-      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/spec/models/author_spec.rb": {
+      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/app/models/book.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
-          2,
-          2,
-          null,
+          1,
+          1,
           null
         ]
       },
@@ -285,50 +283,7 @@
           null
         ]
       },
-      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/spec/models/book_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/app/models/book.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/spec/models/library_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/app/models/library.rb": {
+      "/Users/phillipkamps/turing/2module/ics/purple-silence-9128/app/models/author_book.rb": {
         "lines": [
           1,
           1,
@@ -337,6 +292,6 @@
         ]
       }
     },
-    "timestamp": 1650317114
+    "timestamp": 1650318803
   }
 }
