@@ -1,0 +1,11 @@
+<h1><%= @library.name %></h1>
+
+<div id="authors">
+  <%= link_to "Authors available at #{@library.name}", "/libraries/#{@library.id}/authors" %>
+</div>
+
+<div id="three_most_popular_authors">
+  <% @library.three_most_popular_authors.each do |author| %>
+  <%= author.name %>
+  <% end %>
+</div>
