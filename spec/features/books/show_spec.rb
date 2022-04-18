@@ -34,5 +34,5 @@ RSpec.describe 'Books Show' do
     visit "books/#{book_1.id}"
 
     expect(page).to have_content("74.5")
-  end    
+  end
 end
