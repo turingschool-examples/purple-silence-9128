@@ -1,8 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "Book Show Page" do
+RSpec.describe "Library Show Page" do
   before :all do
     @library = Library.create!(name: "Big Ass Library")
+    @small_library = Library.create!(name: "Small Ass Library")
 
     @book_1 = @library.books.create!(title: "Put This Book Down and Do Your IC", genre: "Nonfiction")
     @book_2 = @library.books.create!(title: "For God's Sake Don't Read This", genre: "Fiction")
@@ -19,34 +20,11 @@ RSpec.describe "Book Show Page" do
   end
 
   before :each do
-    visit "/books/#{@book_1.id}"
+    visit "/libraries/#{@library.id}"
   end
 
-  it "lists the book name, genre, authors and library" do
-    # save_and_open_page
-    within(".title_genre") do
-      expect(page).to have_content("Put This Book Down and Do Your IC")
-      expect(page).to have_content("Genre: Nonfiction")
-
-      expect(page).to_not have_content("For God's Sake Don't Read This")
-      expect(page).to_not have_content("Genre: Fiction")
-    end
-
-    within(".book_authors") do
-      expect(page).to have_content("H.T. Thiccums")
-      expect(page).to have_content("J.R. Hiccups")
-
-      expect(page).to_not have_content("I.Am. Terrible")
-      expect(page).to_not have_content("Wiggles McDoofus")
-    end
-
-    within("#library") do
-      expect(page).to have_content("Big Ass Library")
-    end
-  end
-
-  it "lists average age of authors" do
-    save_and_open_page
-    expect(page).to have_content("Average Age of Authors: 61.5")
+  it "shows name of library" do
+    expect(page).to have_content("Big Ass Library")
+    expect(page).to_not have_content("Small Ass Library")
   end
 end
