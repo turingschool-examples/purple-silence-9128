@@ -14,6 +14,7 @@ RSpec.describe 'the book show page' do
     @author_book_2 = AuthorBook.create!(author_id: @author_2.id, book_id: @book_1.id)
     @author_book_3 = AuthorBook.create!(author_id: @author_3.id, book_id: @book_3.id)
     visit "/books/#{@book_1.id}"
+    # require 'pry'; binding.pry
   end
 
   it 'shows the books name and genre' do
@@ -23,10 +24,16 @@ RSpec.describe 'the book show page' do
     expect(page).to_not have_content("Horror")
   end
 
-  it 'shows the books authors' do
+  it 'shows the books authors and libraries' do
     within('#authors') do
       expect(page).to have_content("Amanda Hugankiss")
       expect(page).to have_content("Fanny McPatdown")
+      expect(page).to_not have_content("Mr. Evil")
+    end
+
+    within('#libraries') do
+      expect(page).to have_content("Richmond Public Library")
+      expect(page).to_not have_content("Henrico Public Library")
     end
   end
 end
