@@ -60,6 +60,7 @@ RSpec.describe 'Libraries Show' do
     BookAuthor.create!(book_id: "#{book_10.id}", author_id: "#{author_4.id}")
 
     visit "/libraries/#{lib_1.id}"
+
     expect(page).to have_content('Precious Peanutson')
     expect(page).to have_content('Jason Scripp')
     expect(page).to have_content('Jennifer Marley')
