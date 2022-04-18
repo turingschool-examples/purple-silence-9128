@@ -9,9 +9,9 @@ RSpec.describe "library Show Page" do
     author2 = Author.create!(name:"Dagbart Zorple", birth_year:1922)
     author_book1 = AuthorBook.create!(author_id: author1.id, book_id: book.id)
     author_book2 = AuthorBook.create!(author_id: author2.id, book_id: book.id)
-    binding.pry
-    visit "/libraries/#{library.id}"
 
+    visit "/libraries/#{library.id}"
+    save_and_open_page
     expect(page).to have_content("Beaverton Public Library")
     expect(page).to have_link("This Library's Authors")
 
