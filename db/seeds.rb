@@ -19,7 +19,7 @@ bad_author = Author.create!(name: "I.Am. Terrible", birth_year: 1847)
 strange_author = Author.create!(name: "Wiggles McDoofus", birth_year: 1975)
 
 ab_1 = AuthorBook.create!(author_id: thiccums.id, book_id: book_1.id)
-ab_2 = AuthorBook.create!(author_id: hiccups.id, book_id: book_1.id)
+ab_2 = AuthorBoork.create!(author_id: hiccups.id, book_id: book_1.id)
 ab_3 = AuthorBook.create!(author_id: bad_author.id, book_id: book_2.id)
 ab_4 = AuthorBook.create!(author_id: strange_author.id, book_id: book_2.id)
 ab_5 = AuthorBook.create!(author_id: thiccums.id, book_id: book_3.id)
