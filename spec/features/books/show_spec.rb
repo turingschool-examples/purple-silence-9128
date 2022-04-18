@@ -15,14 +15,25 @@ RSpec.describe 'books show page' do
 
     @author1 = Author.create!(name: 'J.R.R. Tolkin', birth_year: 1910)
     @author2 = Author.create!(name: 'Douglas Adams', birth_year: 1950)
+    @author3 = Author.create!(name: 'Some guy', birth_year: 2000)
 
     @author_book1 = AuthorBook.create!(author: @author1, book: @book1)
     @author_book2 = AuthorBook.create!(author: @author2, book: @book1)
 
+    visit library_book_path(@lib1,@book1)
   end
 
 	it 'shows book attributes' do
     expect(page).to have_content(@book1.title)
     expect(page).to have_content(@book1.genre)
+  end
+  it 'shows a list of authors for the book' do
+    expect(page).to have_content(@author1.name)
+    expect(page).to have_content(@author2.name)
+    expect(page).to_not have_content(@author3.name)
+  end
+
+  it 'shows the Library the book belongs to' do
+    expect(page).to have_content(@lib1.name)
   end
 end
