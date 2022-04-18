@@ -1,0 +1,8 @@
+<h1> <%= @book.title %> </h1>
+<h4><%= @book.genre %></h4>
+<ul>
+  <% @book.authors.each do |author| %>
+  <li> <%= author.name %></li>
+</ul>
+<% end %>
+<h4> <%= @book.library.name %> </h4>
