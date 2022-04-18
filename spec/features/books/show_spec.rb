@@ -18,11 +18,9 @@ RSpec.describe "Book Show Page" do
     @ab_4 = AuthorBook.create!(author_id: @strange_author.id, book_id: @book_2.id)
   end
 
-  before :each do
-    visit "/books/#{@book_1.id}"
-  end
-
   it "lists the book name, genre, authors and library" do
+    visit "/books/#{@book_1.id}"
+
     within(".title_genre") do
       expect(page).to have_content("Put This Book Down and Do Your IC")
       expect(page).to have_content("Genre: Nonfiction")
@@ -45,6 +43,15 @@ RSpec.describe "Book Show Page" do
   end
 
   it "lists average age of authors" do
-    expect(page).to have_content("Average Age of Authors: 61.5")
+    book_3 = @library.books.create!(title: "This Book is Sooo Good", genre: "Nonfiction")
+    book_4 = @library.books.create!(title: "Hello your FUTURE'S ON THE LINE", genre: "Fiction")
+
+    ab_5 = AuthorBook.create!(author_id: @thiccums.id, book_id: book_3.id)
+    ab_6 = AuthorBook.create!(author_id: @hiccups.id, book_id: book_4.id)
+    ab_7 = AuthorBook.create!(author_id: @bad_author.id, book_id: book_4.id)
+
+    visit "/books/#{book_3.id}"
+
+    expect(page).to have_content("Average Age of Authors: 118")
   end
 end
