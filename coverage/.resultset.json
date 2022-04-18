@@ -312,21 +312,6 @@
           null
         ]
       },
-      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/controllers/libraries_controller.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/controllers/authors_controller.rb": {
         "lines": [
           1,
@@ -336,8 +321,14 @@
           null,
           null
         ]
+      },
+      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650244315
+    "timestamp": 1650244883
   }
 }

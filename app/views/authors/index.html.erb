@@ -1,0 +1,4 @@
+<h1><%= @library.name %>'s Authors Index</h1></br>
+<% @library.authors.each do |author| %>
+<p><%= author.name %></p>
+<% end %>
