@@ -5,6 +5,6 @@ class Book < ApplicationRecord
   has_many :authors, through: :author_books
 
   def average_author_age
-    binding.pry
+    (Time.now.year - authors.average(:birth_year)).to_f
   end
 end

@@ -250,6 +250,18 @@
           null
         ]
       },
+      "/Users/drewproebstel/turing/2module/challenges/purple-silence-9128/spec/models/author_book_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/drewproebstel/turing/2module/challenges/purple-silence-9128/app/models/author_book.rb": {
         "lines": [
           1,
@@ -271,7 +283,7 @@
           null,
           1,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -290,13 +302,13 @@
           null,
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null
         ]
@@ -308,6 +320,10 @@
           1,
           1,
           1,
+          null,
+          1,
+          3,
+          null,
           null
         ]
       },
@@ -317,11 +333,11 @@
           null,
           1,
           1,
-          1,
+          2,
           null,
           null,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -333,8 +349,23 @@
           1,
           null
         ]
+      },
+      "/Users/drewproebstel/turing/2module/challenges/purple-silence-9128/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/drewproebstel/turing/2module/challenges/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650247165
+    "timestamp": 1650248108
   }
 }
