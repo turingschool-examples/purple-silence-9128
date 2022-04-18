@@ -250,6 +250,18 @@
           null
         ]
       },
+      "/Users/johnhennerich/turing/2mod/IC/purple-silence-9128/spec/models/author_book_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/johnhennerich/turing/2mod/IC/purple-silence-9128/app/models/author_book.rb": {
         "lines": [
           1,
@@ -343,6 +355,6 @@
         ]
       }
     },
-    "timestamp": 1650309676
+    "timestamp": 1650310521
   }
 }
