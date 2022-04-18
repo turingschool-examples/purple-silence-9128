@@ -1,0 +1,9 @@
+<h1><%= "#{@book.title} Show Page" %></h1>
+
+<h3><%= "Title: #{@book.title}" %></h3>
+<h3><%= "Genre #{@book.genre}" %></h3>
+<h3>Authors:</h3>
+  <% @book.authors_books.each do |author_book| %>
+    <h4><%= "--#{author_book.author.name}" %></h4>
+  <% end %>
+<h3><%= "Library: #{@library.name}" %></h3>
