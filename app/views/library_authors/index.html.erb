@@ -1,0 +1,6 @@
+<h2>Authors At <%= @library.name %></h2>
+<ul>
+  <% @library.authors.distinct.each do |author| %>
+    <li> <%= author.name %></li>
+  <% end %>
+</ul>

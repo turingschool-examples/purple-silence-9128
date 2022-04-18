@@ -1,0 +1,17 @@
+<div class="title_genre">
+  <h1>Title: <%= @book.title %></h1>
+  <h2>Genre: <%= @book.genre %></h2>
+</div>
+
+<div class="book_authors">
+  <h2>Authors:</h2>
+  <ul>
+    <% @book.authors.each do |author| %>
+      <li><%= author.name %></li>
+    <% end %>
+  </ul>
+</div>
+
+<h2 id="library">Library: <%= @book.library.name %></h2>
+
+<h2>Average Age of Authors: <%= @book.avg_authors_age %></h2>
