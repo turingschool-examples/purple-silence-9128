@@ -11,4 +11,10 @@ RSpec.describe Book, type: :model do
     it { should have_many :author_books }
     it { should have_many :authors }
   end
+
+  describe "instance methods" do
+    it "text" do
+
+    end
+  end
 end
