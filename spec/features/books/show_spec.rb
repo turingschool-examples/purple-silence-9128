@@ -16,7 +16,6 @@ RSpec.describe "Book Show Page" do
     expect(page).to have_content("Autobiography")
     expect(page).to have_content("Drew Proebstel")
     expect(page).to have_content("Dagbart Zorple")
-
   end
   it 'shows all authors names' do
 

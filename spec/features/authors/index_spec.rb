@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Book Show Page" do
-  it 'shows book title and genre' do
+RSpec.describe "authors index page" do
+  it 'shows a unique list of authors' do
 
     library = Library.create!(name:"Beaverton Public Library")
     book = library.books.create!(title:"The Greatest Zone", genre:"Autobiography", )
@@ -11,7 +11,7 @@ RSpec.describe "Book Show Page" do
     author_book2 = AuthorBook.create!(author_id: author2.id, book_id: book.id)
 
     visit "/libraries/#{library.id}/authors"
-    
+
     expect(page).to have_content("Drew Proebstel")
     expect(page).to have_content("Dagbart Zorple")
 
