@@ -36,4 +36,10 @@ RSpec.describe 'the book show page' do
       expect(page).to_not have_content("Henrico Public Library")
     end
   end
+
+  it 'shows the average age of the authors for that book' do
+      within('#authors') do
+      expect(page).to have_content("Average Age of Authors: 55")
+    end
+  end
 end
