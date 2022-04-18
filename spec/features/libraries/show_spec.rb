@@ -21,4 +21,10 @@ RSpec.describe 'the library show page' do
     expect(page).to have_content("Richmond Public Library")
     expect(page).to_not have_content("Henrico Public Library")
   end
+
+  it 'has a link to view all the authors that have books at that library' do
+    within('#authors') do
+      expect(page).to have_link("Authors available at Richmond Public Library")
+    end
+  end
 end
