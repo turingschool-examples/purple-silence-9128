@@ -6,7 +6,12 @@ class Book < ApplicationRecord
   has_many :authors, through: :author_books
 
   def avg_authors_age
-    avg = Time.now.year - (authors.sum(:birth_year).to_f / 2.0)
-    avg.round(1)
+    if authors.length > 1
+      avg = Time.now.year - (authors.sum(:birth_year).to_f / 2.0)
+      avg.round(1)
+    else
+      avg = Time.now.year - authors.first.birth_year
+    end
+
   end
 end
