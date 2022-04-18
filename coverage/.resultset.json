@@ -262,6 +262,15 @@
           1,
           1,
           1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -305,33 +314,8 @@
           1,
           null
         ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/controllers/libraries_controller.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/controllers/library_authors_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1650257411
+    "timestamp": 1650258717
   }
 }
