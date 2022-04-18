@@ -31,7 +31,7 @@ RSpec.describe Book, type: :model do
 
   describe "instance methods" do
     it "finds average age of authors" do
-      expect(@book_1.avg_authors_age).to eq(146.5)
+      expect(@book_1.avg_authors_age).to eq(61.5)
     end
   end
 end
