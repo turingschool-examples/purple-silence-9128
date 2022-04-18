@@ -10,9 +10,9 @@ RSpec.describe 'the book show page' do
     @author_1 = Author.create!(name: "Amanda Hugankiss", birth_year: DateTime.new(1984))
     @author_2 = Author.create!(name: "Mr. Good", birth_year: DateTime.new(1950))
     @author_3 = Author.create!(name: "Mr. Evil", birth_year: DateTime.new(1969))
-    @author_book_1 = AuthorBook.create!(author_id: @author_1.id, book_id: @book_1)
-    @author_book_2 = AuthorBook.create!(author_id: @author_2.id, book_id: @book_2)
-    @author_book_3 = AuthorBook.create!(author_id: @author_3.id, book_id: @book_3)
+    @author_book_1 = AuthorBook.create!(author_id: @author_1.id, book_id: @book_1.id)
+    @author_book_2 = AuthorBook.create!(author_id: @author_2.id, book_id: @book_2.id)
+    @author_book_3 = AuthorBook.create!(author_id: @author_3.id, book_id: @book_3.id)
     visit "/books/#{@book_1.id}"
   end
 
