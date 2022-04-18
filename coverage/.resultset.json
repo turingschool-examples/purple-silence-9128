@@ -241,6 +241,8 @@
         "lines": [
           1,
           null,
+          null,
+          1,
           null
         ]
       },
@@ -250,7 +252,7 @@
           null
         ]
       },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/models/author_book.rb": {
+      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/models/library.rb": {
         "lines": [
           1,
           1,
@@ -265,20 +267,14 @@
           null
         ]
       },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/spec/models/author_spec.rb": {
+      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/models/book.rb": {
         "lines": [
           1,
+          1,
           null,
           1,
           1,
-          2,
-          2,
-          null,
-          null,
           1,
-          2,
-          2,
-          null,
           null
         ]
       },
@@ -292,59 +288,30 @@
           null
         ]
       },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/spec/models/book_spec.rb": {
+      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/models/author_book.rb": {
         "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/models/book.rb": {
-        "lines": [
-          1,
-          1,
-          null,
           1,
           1,
           1,
           null
         ]
       },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/spec/models/library_spec.rb": {
+      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/controllers/books_controller.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
-          2,
-          null,
-          null,
-          1,
-          2,
           null,
           null
         ]
       },
-      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/models/library.rb": {
+      "/Users/johnnybowman/turing/2mod/ic/purple-silence-9128/app/controllers/application_controller.rb": {
         "lines": [
-          1,
-          1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1650251746
+    "timestamp": 1650253290
   }
 }

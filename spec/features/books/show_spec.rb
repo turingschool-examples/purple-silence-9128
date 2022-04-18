@@ -21,7 +21,8 @@ RSpec.describe "Book Show Page" do
   end
 
   it "lists the book name, genre, authors and library" do
-    within("#title_genre") do
+    save_and_open_page
+    within(".title_genre") do
       expect(page).to have_content("Put This Book Down and Do Your IC")
       expect(page).to have_content("Genre: Nonfiction")
 
@@ -29,7 +30,7 @@ RSpec.describe "Book Show Page" do
       expect(page).to_not have_content("Genre: Fiction")
     end
 
-    within("#book_authors") do
+    within(".book_authors") do
       expect(page).to have_content("H.T. Thiccums")
       expect(page).to have_content("J.R. Hiccups")
 
