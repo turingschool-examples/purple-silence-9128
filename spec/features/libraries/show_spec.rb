@@ -19,16 +19,16 @@ RSpec.describe "Library Show Page" do
     @ab_4 = AuthorBook.create!(author_id: @strange_author.id, book_id: @book_2.id)
   end
 
-  before :each do
-    visit "/libraries/#{@library.id}"
-  end
-
   it "shows name of library" do
+    visit "/libraries/#{@library.id}"
+
     expect(page).to have_content("Big Ass Library")
     expect(page).to_not have_content("Small Ass Library")
   end
 
   it "has link to view all authors that have books in the library" do
+    visit "/libraries/#{@library.id}"
+
     click_link "Authors At This Library"
 
     expect(current_path).to eq("/libraries/#{@library.id}/authors")
@@ -46,10 +46,13 @@ RSpec.describe "Library Show Page" do
     ab_6 = AuthorBook.create!(author_id: @hiccups.id, book_id: book_4.id)
     ab_7 = AuthorBook.create!(author_id: @bad_author.id, book_id: book_4.id)
 
+    visit "/libraries/#{@library.id}"
+    # save_and_open_page
     within("#popular_authors") do
       expect(page).to have_content(@thiccums.name)
       expect(page).to have_content(@hiccups.name)
       expect(page).to have_content(@bad_author.name)
+      expect(page).to_not have_content(@strange_author.name)
     end
   end
 end

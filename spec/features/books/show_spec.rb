@@ -23,7 +23,6 @@ RSpec.describe "Book Show Page" do
   end
 
   it "lists the book name, genre, authors and library" do
-    # save_and_open_page
     within(".title_genre") do
       expect(page).to have_content("Put This Book Down and Do Your IC")
       expect(page).to have_content("Genre: Nonfiction")
@@ -46,7 +45,6 @@ RSpec.describe "Book Show Page" do
   end
 
   it "lists average age of authors" do
-    save_and_open_page
     expect(page).to have_content("Average Age of Authors: 61.5")
   end
 end
