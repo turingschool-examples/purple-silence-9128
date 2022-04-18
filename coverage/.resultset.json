@@ -250,9 +250,8 @@
           null
         ]
       },
-      "/Users/antoniosalmeron/turing/2module/challenges/purple-silence-9128/app/models/author.rb": {
+      "/Users/antoniosalmeron/turing/2module/challenges/purple-silence-9128/app/models/library.rb": {
         "lines": [
-          1,
           1,
           1,
           1,
@@ -266,20 +265,12 @@
           null
         ]
       },
-      "/Users/antoniosalmeron/turing/2module/challenges/purple-silence-9128/spec/models/book_spec.rb": {
+      "/Users/antoniosalmeron/turing/2module/challenges/purple-silence-9128/app/models/author.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
-          2,
-          2,
-          null,
-          null,
           1,
-          2,
-          2,
-          null,
           null
         ]
       },
@@ -287,29 +278,6 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/antoniosalmeron/turing/2module/challenges/purple-silence-9128/spec/models/library_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/antoniosalmeron/turing/2module/challenges/purple-silence-9128/app/models/library.rb": {
-        "lines": [
           1,
           1,
           1,
@@ -325,6 +293,6 @@
         ]
       }
     },
-    "timestamp": 1650302476
+    "timestamp": 1650303021
   }
 }
