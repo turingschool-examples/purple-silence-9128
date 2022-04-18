@@ -270,10 +270,26 @@
           1,
           null,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
           1,
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          null,
+          1,
           null,
           null
         ]
@@ -397,12 +413,20 @@
         "lines": [
           1,
           1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/drewproebstel/turing/2module/challenges/purple-silence-9128/app/controllers/authors_controller.rb": {
+        "lines": [
+          1,
           1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1650249375
+    "timestamp": 1650249942
   }
 }
