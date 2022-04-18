@@ -25,6 +25,8 @@ RSpec.describe 'the library show page' do
   it 'has a link to view all the authors that have books at that library' do
     within('#authors') do
       expect(page).to have_link("Authors available at Richmond Public Library")
+      click_link("Authors available at Richmond Public Library")
+      expect(current_path).to eq("/libraries/#{@library_1.id}/authors")
     end
   end
 end

@@ -1,1 +1,5 @@
 <h1><%= @library.name %></h1>
+
+<div id="authors">
+  <%= link_to "Authors available at #{@library.name}", "/libraries/#{@library.id}/authors" %>
+</div>

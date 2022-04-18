@@ -241,10 +241,14 @@
         "lines": [
           1,
           null,
+          null,
+          1,
+          null,
+          1,
           1,
           null,
           null,
-          1,
+          null,
           null
         ]
       },
@@ -312,7 +316,7 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -322,8 +326,18 @@
           1,
           null
         ]
+      },
+      "/Users/alexanderpsitos/turing/2module/week4/purple-silence-9128/app/controllers/authors_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1650243387
+    "timestamp": 1650244315
   }
 }
