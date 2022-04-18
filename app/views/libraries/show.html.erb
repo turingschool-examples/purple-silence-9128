@@ -1,0 +1,6 @@
+<h1> <%= @library.name %></h1>
+<%= link_to "Authors Index", "/libraries/#{@library.id}/authors" %><hr>
+<h3>Our Most Popular Authors: </h3>
+<% @library.authors.three_most_popular.each do |author| %>
+<%= author.name %><br> 
+<% end %>
