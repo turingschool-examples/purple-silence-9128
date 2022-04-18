@@ -38,10 +38,14 @@ RSpec.describe 'books show page' do
   end
 
   it 'show the average age of the authors for the book' do
-    expect(page).to have_content()
+    save_and_open_page
+    expect(page).to have_content(92)
   end
-  
+
 end
+
+#
+
 #   Story 2 of 3
 # As a visitor
 # when I visit a book's show page
