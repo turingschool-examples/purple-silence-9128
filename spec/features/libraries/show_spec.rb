@@ -27,4 +27,14 @@ RSpec.describe "Library Show Page" do
     expect(page).to have_content("Big Ass Library")
     expect(page).to_not have_content("Small Ass Library")
   end
+
+  it "has link to view all authors that have books in the library" do
+    click_link "Authors At This Library"
+    
+    expect(current_path).to eq("/libraries/#{@library.id}/authors")
+    expect(page).to have_content("H.T. Thiccums")
+    expect(page).to have_content("J.R. Hiccups")
+    expect(page).to have_content("I.Am. Terrible")
+    expect(page).to have_content("Wiggles McDoofus")
+  end
 end
