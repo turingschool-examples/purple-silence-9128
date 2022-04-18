@@ -30,5 +30,10 @@ RSpec.describe "Book show page" do
     # expect(page).to have_content("Gerald Goshawk")
     expect(page).to_not have_content("JRR Tolkein")
     expect(page).to have_content("Denver Public Library")
+    # can only display one author. @book.authors does not return all authors...WHY
+  end
+
+  it "lists authors average age" do
+    expect(page).to have_content("63")
   end
 end

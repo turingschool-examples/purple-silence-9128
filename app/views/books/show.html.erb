@@ -2,7 +2,8 @@
 <h4><%= @book.genre %></h4>
 <ul>
   <% @book.authors.each do |author| %>
-  <li> <%= author.name %></li>
+  <li> <%= author.name %> </li>
 </ul>
 <% end %>
 <h4> <%= @book.library.name %> </h4>
+<p><%= @book.authors_average_age %></p>

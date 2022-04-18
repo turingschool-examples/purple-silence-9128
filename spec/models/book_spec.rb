@@ -12,14 +12,18 @@ RSpec.describe Book, type: :model do
     it { should have_many(:authors).through(:author_books) }
   end
 
-  # let!(:dpl) { Library.create!(name: "Denver Public Library") }
-  # let!(:herbology) { Book.create!(title: "A Guide to Herbology", genre: "Nonfiction", library_id: dpl.id) }
-  # let!(:henderson) { Author.create!(name: "Dee Henderson", birth_year: 1959) }
+  let!(:dpl) { Library.create!(name: "Denver Public Library") }
+  let!(:herbology) { Book.create!(title: "A Guide to Herbology", genre: "Nonfiction", library_id: dpl.id) }
+  let!(:henderson) { Author.create!(name: "Dee Henderson", birth_year: 1959) }
   # let!(:goshawk) { Author.create!(name: "Gerald Goshawk", birth_year: 1948) }
-  # let!(:author_book_herbology) { AuthorBook.create!(book_id: herbology.id, author_id: henderson.id) }
+  let!(:author_book_herbology) { AuthorBook.create!(book_id: herbology.id, author_id: henderson.id) }
   # let!(:author_book_herbology) { AuthorBook.create!(book_id: herbology.id, author_id: goshawk.id) }
   #
   # it "returns all authors names for a book" do
   #   expect(herbology.author_names).to eq(["Dee Henderson", "Gerald Goshawk"])
   # end
+
+  it "#authors_average_age" do
+    expect(herbology.authors_average_age).to eq(63)
+  end
 end

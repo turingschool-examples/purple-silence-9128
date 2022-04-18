@@ -8,4 +8,9 @@ class Book < ApplicationRecord
   #   authors = Book.joins(:author_books, :authors).where(id: @book.id).first.authors
   #   authors.map { |author| author.name }
   # end
+
+  def authors_average_age
+    birth_years = authors.map { |author| author.birth_year }
+    birth_years.map { |year| (2022 - year) / birth_years.count }[0]
+  end
 end
