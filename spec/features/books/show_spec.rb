@@ -12,11 +12,11 @@ RSpec.describe 'Book Show Page', type: :feature do
   it 'Shows an individual book and all related attributes' do
     visit book_path(@book_1.id)
 
-    within("book-#{@book_1.id}") do
+    within("#book-#{@book_1.id}") do
       expect(page).to have_content("Title: #{@book_1.title}")
       expect(page).to have_content("Genre: #{@book_1.genre}")
       expect(page).to have_content("Library: #{@library_1.name}")
-      expect(page).to have_content("Authors: #{@author_1.name}")
+      expect(page).to have_content("#{@author_1.name}")
     end
   end
 end
