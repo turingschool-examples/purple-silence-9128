@@ -244,6 +244,8 @@
           null,
           1,
           null,
+          1,
+          null,
           null
         ]
       },
@@ -251,6 +253,11 @@
         "lines": [
           1,
           null
+        ]
+      },
+      "/Users/pistachiojoe/turing/mod2/2proj/3ic/purple-silence-9128/spec/features/library/show_spec.rb": {
+        "lines": [
+
         ]
       },
       "/Users/pistachiojoe/turing/mod2/2proj/3ic/purple-silence-9128/spec/models/author_book_spec.rb": {
@@ -320,6 +327,33 @@
           2,
           2,
           null,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -332,11 +366,11 @@
           1,
           null,
           1,
-          4,
+          6,
           null,
           null,
           1,
-          4,
+          5,
           null,
           null
         ]
@@ -381,6 +415,6 @@
         ]
       }
     },
-    "timestamp": 1650408839
+    "timestamp": 1650409741
   }
 }
