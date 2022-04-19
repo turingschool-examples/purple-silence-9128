@@ -5,7 +5,10 @@ class Book < ApplicationRecord
   has_many :authors, through: :author_books
 
   def all_authors
-    #binding.pry
     Author.joins(:books).where("books.id=#{self.id}")
+  end
+
+  def average_author_age
+    Author.joins(:books).where("books.id=#{self.id}").average(:age)
   end
 end

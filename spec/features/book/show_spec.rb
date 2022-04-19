@@ -38,4 +38,10 @@ describe "Book Show", type: :feature do
     expect(page).to have_content("The Library")
     expect(page).to_not have_content("Cursed Library")
   end
+  it "displays average author age" do
+    visit "/books/#{@book1.id}"
+
+    expect(page).to have_content(46)
+
+  end
 end
