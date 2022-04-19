@@ -30,7 +30,7 @@ describe 'book show page' do
     @author_2 = Author.create!(
       name: "Carmen",
       dob: DateTime.new(1953),
-      deathyear: DateTime.new(2012)
+      deathyear: DateTime.new(2018)
     )
     @book_author_3 = BookAuthor.create!(
       book_id: @book_3.id,
@@ -100,10 +100,11 @@ describe 'book show page' do
     end
 
     it 'shows the books authors average ages' do
-      expect(page).to have_content("Average Author Age: 27")
+      visit book_path(@book_1)
+      expect(page).to have_content("Average Author Age: 61")
 
-      expect(page).not_to have_content("Average Author Age: 12")
-      expect(page).not_to have_content("Average Author Age: 135")
+      expect(page).not_to have_content("Average Author Age: 1019")
+      expect(page).not_to have_content("Average Author Age: 65")
     end
   end
 end
