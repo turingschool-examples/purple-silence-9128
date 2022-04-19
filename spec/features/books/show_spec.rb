@@ -38,15 +38,14 @@ RSpec.describe 'books show page' do
      within("#book-library") do
        expect(page).to have_content(@library1.name)
        expect(page).to_not have_content(@library2.name)
-       save_and_open_page
      end
    end
  end
 
  describe 'User story 2' do
-   xit 'shows average age of authors' do
-     within("#average_age") do
-
+   it 'shows average age of authors' do
+     within("#average-age") do
+       expect(page).to have_content(@book1.average_age)
      end
    end
  end
