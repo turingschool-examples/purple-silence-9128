@@ -78,7 +78,7 @@ describe 'book show page' do
       expect(page).not_to have_content("NonFiction")
     end
 
-    xit 'shows list of authors for book' do
+    it 'shows list of authors for book' do
       visit book_path(@book_1)
       within "#authors" do
       expect(page).to have_content(@author_2.name)
