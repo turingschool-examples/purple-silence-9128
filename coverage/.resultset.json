@@ -262,12 +262,16 @@
           null,
           1,
           2,
+          2,
+          2,
           null,
           null
         ]
       },
       "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/models/book.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -303,8 +307,24 @@
           1,
           null
         ]
+      },
+      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/models/book_author.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/models/author.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650403493
+    "timestamp": 1650403889
   }
 }
