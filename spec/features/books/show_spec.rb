@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'a books show page' do
+RSpec.describe 'a book show page' do
   before :each do
     @library_1 = Library.create!(name: 'Denver Public Library')
     @library_2 = Library.create!(name: 'Aurora Public Library')
