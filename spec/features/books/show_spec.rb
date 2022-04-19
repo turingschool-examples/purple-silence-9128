@@ -8,8 +8,8 @@ RSpec.describe 'Books#Show' do
     @book1 = @library1.books.create!(title: "Cryptonomicon", genre: "science fiction")
     @book2 = @library1.books.create!(title: "Seveneves", genre: "science fiction")
     @book3 = @library1.books.create!(title: "Fantastic Creatures and Where to Locate Them", genre: "fantasy")
-    @book4 = @library1.books.create!(title: "Harry and The Philosopher's Gem")
-    @book5 = @library2.books.create!(title: "What if?" genre: "non fiction")
+    @book4 = @library1.books.create!(title: "Harry and The Philosopher's Gem", genre: "fantasy")
+    @book5 = @library2.books.create!(title: "What if?", genre: "non fiction")
 
     @author1 = Author.create!(name: "Jannis Raowlins")
     @author2 = Author.create!(name: "Neele Stephens")
