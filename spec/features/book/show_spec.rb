@@ -9,6 +9,7 @@ describe "Book Show", type: :feature do
     @author_book1 = AuthorBook.create!(author: @author1, book: @book1)
     @author_book3 = AuthorBook.create!(author: @author3, book: @book1)
 
+    @library2 = Library.create!(name: "Cursed Library")
     @book2 = Book.create!(title: "Bad Book", genre: "Horror", library: @library1)
     @author2 = Author.create!(name: "Bad Author", age: 31)
     @author_book2 = AuthorBook.create!(author: @author2, book: @book2)
@@ -30,5 +31,11 @@ describe "Book Show", type: :feature do
     expect(page).to have_content(41)
     expect(page).to_not have_content("Bad Author")
     expect(page).to_not have_content(31)
+  end
+  it "displays book library" do
+    visit "/books/#{@book1.id}"
+
+    expect(page).to have_content("The Library")
+    expect(page).to_not have_content("Cursed Library")
   end
 end
