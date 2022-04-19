@@ -255,12 +255,12 @@
           null
         ]
       },
-      "/Users/kjolhede/turing/2module/purple-silence-9128/app/models/author.rb": {
+      "/Users/kjolhede/turing/2module/purple-silence-9128/app/models/author_book.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
+          null,
           null
         ]
       },
@@ -271,11 +271,69 @@
           null
         ]
       },
-      "/Users/kjolhede/turing/2module/purple-silence-9128/app/models/library.rb": {
+      "/Users/kjolhede/turing/2module/purple-silence-9128/spec/models/author_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kjolhede/turing/2module/purple-silence-9128/app/models/author.rb": {
         "lines": [
           1,
           1,
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/kjolhede/turing/2module/purple-silence-9128/spec/models/book_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -293,38 +351,39 @@
           1,
           null,
           null,
+          1,
+          1,
+          null,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/kjolhede/turing/2module/purple-silence-9128/app/models/author_book.rb": {
+      "/Users/kjolhede/turing/2module/purple-silence-9128/spec/models/library_spec.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
+          2,
+          null,
+          null,
+          1,
+          2,
           null,
           null
         ]
       },
-      "/Users/kjolhede/turing/2module/purple-silence-9128/app/controllers/books_controller.rb": {
+      "/Users/kjolhede/turing/2module/purple-silence-9128/app/models/library.rb": {
         "lines": [
           1,
-          null,
           1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/kjolhede/turing/2module/purple-silence-9128/app/controllers/application_controller.rb": {
-        "lines": [
           1,
           null
         ]
       }
     },
-    "timestamp": 1650377589
+    "timestamp": 1650378465
   }
 }
