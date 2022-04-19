@@ -1,15 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Library, type: :model do
-  describe 'validations' do
-    it { should validate_presence_of :name }
-  end
-  
-  describe 'relationships' do
-    it { should have_many :books }
-  end
 
-  describe 'instance method' do 
+RSpec.describe 'Library Author index' do 
     before :each do 
         @lib = Library.create!(name: "DCL")
         @book1 = @lib.books.create!(title: "Where Red Fern", genre: 'fiction')
@@ -27,11 +19,13 @@ RSpec.describe Library, type: :model do
         BookAuthor.create!(book_id: @book4.id, author_id: @author2.id)
         BookAuthor.create!(book_id: @book2.id, author_id: @author3.id)
 
+        visit "/libraries/#{@lib.id}/authors"
     end
 
-    it "returns list of unique authors" do 
-      binding.pry
-      expect(@lib.uniq_authors).to eq([@author1, @author2, @author3])
+    it 'has a unique list of all the authors' do 
+        save_and_open_page
+        expect(page).to have_content("Rick")
+        expect(page).to have_content("Tom")
+        expect(page).to have_content("Betty")
     end
-  end
-end 
+end
