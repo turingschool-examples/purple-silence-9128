@@ -1,0 +1,3 @@
+def AuthorsController < ApplicationController
+  
+end
