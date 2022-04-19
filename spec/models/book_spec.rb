@@ -20,7 +20,7 @@ RSpec.describe Book, type: :model do
         BookAuthor.create(book_id: @book1.id, author_id: @author1.id)
         BookAuthor.create(book_id: @book1.id, author_id: @author2.id)
 
-        expect(@book1.average_age).to eq(30)
+        expect(@book1.average_age).to eq(31)
 
     end
   end
