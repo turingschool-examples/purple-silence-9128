@@ -1,0 +1,4 @@
+<h1><%= @library.name %></h1>
+<div id="library">
+  <%= link_to "View all authors", "/library/#{@library.id}/authors", method: :get %>
+</div>

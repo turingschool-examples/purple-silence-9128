@@ -27,9 +27,10 @@ RSpec.describe 'Library show page' do
      within("#library") do
        click_link "View all authors"
 
-       expect(current_path).to eq("/library/authors")
-
-       expect(page).to have_content(@author1.name)
+       expect(current_path).to eq("/library/#{@library1.id}/authors")
+     end
+     within("#authors") do
+       expect(page).to have_content("#{@author1.name}")
        expect(page).to have_content(@author2.name)
        expect(page).to_not have_content(@author3.name)
      end
