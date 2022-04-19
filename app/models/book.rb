@@ -4,4 +4,8 @@ class Book < ApplicationRecord
 
   has_many :author_books
   has_many :authors, through: :author_books
+
+  def avg_auth_age
+    Time.now.year - authors.average(:birth_year)
+  end
 end
