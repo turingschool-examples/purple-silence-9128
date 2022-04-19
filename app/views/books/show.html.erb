@@ -6,4 +6,5 @@
 <% @book.authors.each do |author| %>
   <h3><%= author.name %></h3>
 <% end %>
+<h2>Average age of authors: <%= @book.average_author_age %></h2>
 </div>
