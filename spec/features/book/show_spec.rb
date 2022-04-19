@@ -36,10 +36,16 @@ RSpec.describe "Book Show page" do
         BookAuthor.create(book_id: @book1.id, author_id: @author2.id)
 
         visit "/books/#{@book1.id}"
-        
+
         expect(page).to have_content("Where Red Fern")
         expect(page).to have_content("fiction")
-        
+        within("#authors") do
+            expect(page).to have_content("Rick")
+            expect(page).to have_content("Tom")
+        end
+        save_and_open_page
+        expect(page).to have_content("Library: DCL")
+ 
     end
 
 end
