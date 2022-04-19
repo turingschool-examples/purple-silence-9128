@@ -1,0 +1,8 @@
+<h1> Book Show </h1>
+<p>Book Title: <%= @book.title %></p>
+<p>Book Genre: <%= @book.genre %></p>
+<p>Authors</p>
+<% @book.all_authors.each do |author| %>
+<%= author.name %>
+<%= author.age %>
+<% end %>
