@@ -242,6 +242,9 @@
           1,
           null,
           1,
+          null,
+          1,
+          1,
           null
         ]
       },
@@ -269,8 +272,8 @@
           1,
           1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null
         ]
@@ -399,8 +402,22 @@
           1,
           null
         ]
+      },
+      "/Users/vaeliwen/turing/2module/purple-silence-9128/app/controllers/libraries_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1650405203
+    "timestamp": 1650405668
   }
 }
