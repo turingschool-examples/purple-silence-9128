@@ -61,4 +61,15 @@ RSpec.describe 'Books#Show' do
     expect(page).to have_content(@book5.authors[0].name)
     expect(page).to have_content(@book5.authors[1].name)
   end
+
+  it "shows the average author age for a book" do
+
+    visit "/books/#{@book1.id}"
+
+    expect(page).to have_content("Average Author's Age: 57")
+
+    visit "/books/#{@book5.id}"
+
+    expect(page).to have_content("Average Author's Age: 69") # Calculated mean of 52 and 86
+  end
 end
