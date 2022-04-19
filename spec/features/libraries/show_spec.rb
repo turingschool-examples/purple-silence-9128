@@ -14,7 +14,19 @@ RSpec.describe 'the Library show page' do
     expect(page).to have_content("DPLibrary")
   end
 
-  it 'has a link to all authors that have written books in the library'
-  it 'takes me to the library index page'
+  it 'has a link to all authors that have written books in the library' do
+    visit "/libraries/#{@library.id}"
+
+    expect(page).to have_link("View All Authors")
+  end
+
+  it 'takes me to the library index page' do
+    visit "/libraries/#{@library.id}"
+
+    click_link "View All Authors"
+
+
+  end
+  
   it 'displays a unique list of names of all authors the library has'
 end
