@@ -241,6 +241,10 @@
         "lines": [
           1,
           1,
+          null,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -250,13 +254,50 @@
           null
         ]
       },
+      "/Users/josephdowns/turing/2module/challenges/purple-silence-9128/spec/features/libraries/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          2,
+          2,
+          null,
+          2,
+          2,
+          2,
+          null,
+          2,
+          2,
+          2,
+          null,
+          2,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/josephdowns/turing/2module/challenges/purple-silence-9128/spec/models/author_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -268,11 +309,11 @@
           1,
           null,
           1,
-          1,
-          0,
-          0,
           null,
-          0,
+          4,
+          8,
+          null,
+          4,
           null,
           null
         ]
@@ -290,13 +331,13 @@
           null,
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null
         ]
@@ -317,11 +358,11 @@
           null,
           1,
           1,
-          1,
+          2,
           null,
           null,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -346,7 +387,7 @@
         "lines": [
           1,
           1,
-          1,
+          4,
           null,
           null
         ]
@@ -356,8 +397,26 @@
           1,
           null
         ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/purple-silence-9128/app/controllers/libraries_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/josephdowns/turing/2module/challenges/purple-silence-9128/app/controllers/library_authors_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1650403215
+    "timestamp": 1650404168
   }
 }
