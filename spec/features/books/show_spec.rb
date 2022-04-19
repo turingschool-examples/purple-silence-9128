@@ -11,17 +11,18 @@ RSpec.describe 'Books#Show' do
     @book4 = @library1.books.create!(title: "Harry and The Philosopher's Gem", genre: "fantasy")
     @book5 = @library2.books.create!(title: "What if?", genre: "non fiction")
 
-    @author1 = Author.create!(name: "Jannis Raowlins")
-    @author2 = Author.create!(name: "Neele Stephens")
-    @author3 = Author.create!(name: "Randall Munroe")
-    @author4 = Author.create!(name: "NASA JPL")
+    @author1 = Author.create!(name: "Jannis Raowlins", age: 45)
+    @author2 = Author.create!(name: "Neele Stephens", age: 57)
+    @author3 = Author.create!(name: "Randall Munroe", age: 52)
+    @author4 = Author.create!(name: "NASA JPL", age: 86)
 
-    @book1.authors << @author2
-    @book2.authors << @author2
-    @book3.authors << @author1
-    @book4.authors << @author1
-    @book5.authors << @author3
-    @book5.authors << @author4
+    association1 = BookAuthor.create!(book_id: @book1.id, author_id: @author2.id)
+    association1 = BookAuthor.create!(book_id: @book2.id, author_id: @author2.id)
+    association1 = BookAuthor.create!(book_id: @book3.id, author_id: @author1.id)
+    association1 = BookAuthor.create!(book_id: @book4.id, author_id: @author1.id)
+    association1 = BookAuthor.create!(book_id: @book5.id, author_id: @author3.id)
+    association1 = BookAuthor.create!(book_id: @book5.id, author_id: @author4.id)
+
   end
 
   it "displays a book's title, genre, and a list of all authors" do
