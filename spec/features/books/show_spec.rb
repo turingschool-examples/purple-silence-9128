@@ -29,7 +29,8 @@ describe 'book show page' do
 
     @author_2 = Author.create!(
       name: "Carmen",
-      dob: DateTime.new(1980)
+      dob: DateTime.new(1953),
+      deathyear: DateTime.new(2012)
     )
     @book_author_3 = BookAuthor.create!(
       book_id: @book_3.id,
@@ -46,7 +47,8 @@ describe 'book show page' do
 
     @author_1 = Author.create!(
       name: "Fizban",
-      dob: DateTime.new(1003)
+      dob: DateTime.new(1003),
+      deathyear: DateTime.new(2022)
     )
     @book_author_1 = BookAuthor.create!(
       book_id: @book_5.id,
@@ -59,7 +61,8 @@ describe 'book show page' do
 
     @author_3 = Author.create!(
       name: "Earl",
-      dob: DateTime.new(1887)
+      dob: DateTime.new(1949),
+      deathyear: DateTime.new(2007)
     )
     @book_author_1 = BookAuthor.create!(
       book_id: @book_1.id,
@@ -94,6 +97,13 @@ describe 'book show page' do
 
         expect(page).not_to have_content("Avaliable at: Delware Library")
       end
+    end
+
+    it 'shows the books authors average ages' do
+      expect(page).to have_content("Average Author Age: 27")
+
+      expect(page).not_to have_content("Average Author Age: 12")
+      expect(page).not_to have_content("Average Author Age: 135")
     end
   end
 end
