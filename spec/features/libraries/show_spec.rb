@@ -27,6 +27,8 @@ RSpec.describe 'a library show page' do
       book_2 = @library_1.books.create!(title: 'Epic Quest 2', genre: 'Adventure')
       book_3 = @library_1.books.create!(title: 'The Haunted Mansion', genre: 'Horror')
       book_4 = @library_1.books.create!(title: 'The Haunted Mansion 2', genre: 'Horror')
+      book_5 = @library_2.books.create!(title: 'The Never Ending Story', genre: 'Adventure')
+      book_6 = @library_2.books.create!(title: 'The Never Ending Story: The End', genre: 'Adventure')
 
       author_1 = Author.create!(name: 'Gilgamesh', age: 555)
       book_1.author_books.create!(author_id: author_1.id)
@@ -45,6 +47,8 @@ RSpec.describe 'a library show page' do
 
       author_4 = Author.create!(name: 'Zamorak', age: 950)
       book_4.author_books.create!(author_id: author_4.id)
+      book_5.author_books.create!(author_id: author_4.id)
+      book_6.author_books.create!(author_id: author_4.id)
 
       visit "/libraries/#{@library_1.id}"
 
