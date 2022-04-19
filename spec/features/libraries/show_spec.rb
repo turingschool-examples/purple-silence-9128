@@ -29,5 +29,5 @@ RSpec.describe 'the Library show page' do
     expect(page).to have_content("Brando Sando")
   end
 
-  it 'displays a unique list of names of all authors the library has'
+  it 'displays a unique list of names of all authors the library has' 
 end
