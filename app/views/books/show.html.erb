@@ -3,3 +3,9 @@
 <h3> Genre: <%= @book.genre %> </h3>
 <hr/>
 
+<div id="authors">
+  <h2><%= @book.title %>'s Authors:</h2>
+  <% @book.authors.each do |author| %>
+    <p><strong><%= author.name %></strong></p>
+  <% end %>
+</div>
