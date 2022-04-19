@@ -1,15 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe Library, type: :model do
-  describe 'validations' do
-    it { should validate_presence_of :name }
-  end
+RSpec.describe Author, type: :model do
 
   describe 'relationships' do
-    it { should have_many :books }
+    it { should have_many :book_authors }
+    it { should have_many(:books).through(:book_authors) }
   end
 
-  xit 'can return the unique authors for each library' do
+  describe 'class methods' do
     library_1 = Library.create!(name: 'Aurora')
     library_2 = Library.create!(name: 'Denver')
     library_3 = Library.create!(name: 'Chandler')
@@ -35,6 +33,9 @@ RSpec.describe Library, type: :model do
     ba_5 = BookAuthor.create!(book: book_3, author: auth_2)
     ba_6 = BookAuthor.create!(book: book_4, author: auth_4)
 
-    expect(library_1.uniquie_list_of_authors).to eq([auth_3, auth_4])
+    it 'can return the authors average age' do
+
+      expect(Author.authors_average_age).to eq(40)
+    end
   end
 end
