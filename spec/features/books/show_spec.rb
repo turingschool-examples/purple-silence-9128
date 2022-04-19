@@ -38,7 +38,7 @@ RSpec.describe 'books show page', type: :feature do
     expect(page).to have_content("Authors Average Age: 50")
 
     visit "/books/#{@book2.id}"
-    expect(page).to have_content("Authors Average Age: 40.7")
-    expect(page).not_to have_content("Authors Average Age: 40.6667")
+    expect(page).to have_content("Authors Average Age: 39.7")
+    expect(page).not_to have_content("Authors Average Age: 39.6667")
   end
 end
