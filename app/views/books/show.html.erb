@@ -1,0 +1,7 @@
+<h1><%= @book.title %></h1>
+Genre: <%= @book.genre %>
+<% @book.authors.each do |author| %>
+  <%= "Author: #{author.name}" %>
+<% end %>
+Found at: <%= @book.library.name %>
+<%= "Average Age of Authors: #{@book.authors.average_age}" %>
