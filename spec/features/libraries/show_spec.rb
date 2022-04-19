@@ -37,7 +37,7 @@ RSpec.describe 'library show page' do
     expect(page).to have_content('E.B. White')
     expect(page).to have_content('Jacob Grimm')
     expect(page).to have_content('Wilhelm Grimm')
-
+    save_and_open_page
     expect('William Strunk').to appear_before('E.B. White')
   end
 end
