@@ -1,0 +1,10 @@
+<div id="book-<%= @book.id %>">
+<h1>Title: <%= @book.title %>
+<h2>Genre: <%= @book.genre %>
+<h2>Library: <%= @book.library.name %>
+<h2>Authors: </h2>
+<% @book.authors.each do |author| %>
+  <h3><%= author.name %></h3>
+<% end %>
+<h2>Average age of authors: <%= @book.average_author_age %></h2>
+</div>
