@@ -16,6 +16,7 @@ RSpec.describe 'book show page' do
     expect(page).to have_content('Sci-fi')
     expect(page).to have_content('Isaac Asimov')
     expect(page).to have_content('Denver Public Library')
+    save_and_open_page
   end
 
 end

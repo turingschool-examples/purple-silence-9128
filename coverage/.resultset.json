@@ -241,6 +241,8 @@
         "lines": [
           1,
           null,
+          null,
+          1,
           null
         ]
       },
@@ -335,8 +337,25 @@
           1,
           null
         ]
+      },
+      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650404027
+    "timestamp": 1650404519
   }
 }
