@@ -29,8 +29,10 @@ RSpec.describe Book, type: :model do
       @book_2.author_books.create!(author_id: @author_2.id)
     end
 
-    it '.average_age_of_authors' do
-      expect(@book_1.average_age_of_authors).to eq(606)
+    context 'user story 2' do
+      it '.average_age_of_authors' do
+        expect(@book_1.average_age_of_authors).to eq(606)
+      end
     end
   end
 end
