@@ -16,5 +16,9 @@ RSpec.describe 'Library Show Page', type: :feature do
 
     expect(page).to have_content(@library_1.name)
     expect(page).to have_link("View Authors", href: "/libraries/#{@library_1.id}/authors")
+
+    click_link "View Authors"
+
+    expect(current_path).to eq("/libraries/#{@library_1.id}/authors")
   end
 end
