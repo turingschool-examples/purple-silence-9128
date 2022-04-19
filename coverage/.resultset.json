@@ -250,6 +250,33 @@
           null
         ]
       },
+      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/spec/models/author_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/models/author.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/spec/models/book_spec.rb": {
         "lines": [
           1,
@@ -273,13 +300,6 @@
           1,
           1,
           1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/models/application_record.rb": {
-        "lines": [
           1,
           1,
           null
@@ -315,16 +335,8 @@
           1,
           null
         ]
-      },
-      "/Users/chrisromero/turing/2module/challenges/purple-silence-9128/app/models/author.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1650403889
+    "timestamp": 1650404027
   }
 }
