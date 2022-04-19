@@ -11,11 +11,11 @@ RSpec.describe "Library authors index page" do
   let!(:falling_up) { Book.create!(title: "Falling Upward", genre: "Spiritual", library_id: dpl.id) }
   let!(:author_book_falling_up) { AuthorBook.create!(book_id: falling_up.id, author_id: rohr.id) }
 
-  # let!(:henderson) { Author.create!(name: "Dee Henderson", birth_year: 1959) }
+  let!(:henderson) { Author.create!(name: "Dee Henderson", birth_year: 1959) }
   let!(:goshawk) { Author.create!(name: "Gerald Goshawk", birth_year: 1948) }
   let!(:herbology) { Book.create!(title: "A Guide to Herbology", genre: "Nonfiction", library_id: dpl.id) }
-  # let!(:author_book_herbology) { AuthorBook.create!(book_id: herbology.id, author_id: henderson.id) }
-  let!(:author_book_herbology) { AuthorBook.create!(book_id: herbology.id, author_id: goshawk.id) }
+  let!(:author_book_herbology_henderson) { AuthorBook.create!(book_id: herbology.id, author_id: henderson.id) }
+  let!(:author_book_herbology_goshawk) { AuthorBook.create!(book_id: herbology.id, author_id: goshawk.id) }
 
   before :each do
     visit "/libraries/#{dpl.id}/authors"

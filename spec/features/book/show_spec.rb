@@ -11,11 +11,11 @@ RSpec.describe "Book show page" do
   let!(:falling_up) { Book.create!(title: "Falling Upward", genre: "Spiritual", library_id: dpl.id) }
   let!(:author_book_falling_up) { AuthorBook.create!(book_id: falling_up.id, author_id: rohr.id) }
 
-  # let!(:henderson) { Author.create!(name: "Dee Henderson", birth_year: 1959) }
-  let!(:goshawk) { Author.create!(name: "Gerald Goshawk", birth_year: 1948) }
+  let!(:henderson) { Author.create!(name: "Dee Henderson", birth_year: 1959) }
+  let!(:goshawk) { Author.create!(name: "Gerald Goshawk", birth_year: 1947) }
   let!(:herbology) { Book.create!(title: "A Guide to Herbology", genre: "Nonfiction", library_id: dpl.id) }
-  # let!(:author_book_herbology) { AuthorBook.create!(book_id: herbology.id, author_id: henderson.id) }
-  let!(:author_book_herbology) { AuthorBook.create!(book_id: herbology.id, author_id: goshawk.id) }
+  let!(:author_book_herbology_henderson) { AuthorBook.create!(book_id: herbology.id, author_id: henderson.id) }
+  let!(:author_book_herbology_goshawk) { AuthorBook.create!(book_id: herbology.id, author_id: goshawk.id) }
 
   before :each do
     visit "/books/#{herbology.id}"
@@ -26,15 +26,13 @@ RSpec.describe "Book show page" do
     expect(page).to_not have_content("Falling Upward")
     expect(page).to have_content("Nonfiction")
     expect(page).to_not have_content("Fantasy")
-    # expect(page).to have_content("Dee Henderson")
+    expect(page).to have_content("Dee Henderson")
     expect(page).to have_content("Gerald Goshawk")
     expect(page).to_not have_content("JRR Tolkein")
     expect(page).to have_content("Denver Public Library")
-    # can only display one author. @book.authors does not return all authors...WHY?
-    # Book DOES have a "has_many" relationship with :authors through :author_books so why isn't it getting all the authors??
   end
 
   it "lists authors average age" do
-    expect(page).to have_content("74")
+    expect(page).to have_content("69")
   end
 end

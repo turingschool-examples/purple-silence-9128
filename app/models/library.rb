@@ -3,6 +3,6 @@ class Library < ApplicationRecord
   has_many :books
 
   def all_authors
-    books.map { |book| book.authors }
+    books.flat_map { |book| book.authors }
   end
 end
