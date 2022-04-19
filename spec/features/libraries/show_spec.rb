@@ -9,6 +9,6 @@ RSpec.describe "Libraries #show" do
   it "shows a name and a link to the library's authors show page" do
     visit "/libraries/#{@library1.id}"
     expect(page).to have_content(@library1.name)
-    expect(page).to have_link(href: "/libraries/#{library1.id}/authors/")
+    expect(page).to have_link(href: "/libraries/#{@library1.id}/authors/")
   end
 end

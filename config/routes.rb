@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   get '/libraries/:id', to: 'libraries#show'
 
-  get '/libraries/:id/authors', to: 'library_books#index'
+  get '/libraries/:id/authors', to: 'library_authors#index'
 end
