@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-18T23:34:20-06:00">2022-04-18T23:34:20-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-18T23:44:49-06:00">2022-04-18T23:44:49-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.69%
+  100.0%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.17
+         1.19
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>27</b> files in total.
+    <b>29</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>121</b> relevant lines,
-    <span class="green"><b>117</b> lines covered</span> and
-    <span class="red"><b>4</b> lines missed. </span>
+    <b>129</b> relevant lines,
+    <span class="green"><b>129</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
-  96.69%
+  100.0%
 </span>
 )
   </div>
@@ -89,6 +89,28 @@
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
             <td class="cell--number">2.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#a2b410b5196bba7ec4d932001e795b3d18277abf" class="src_link" title="app/controllers/libraries_controller.rb">app/controllers/libraries_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.33</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#2bbf4b5994c6d9815f6e6d22aeadf630879f8742" class="src_link" title="app/controllers/library_authors_controller.rb">app/controllers/library_authors_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -304,9 +326,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#369ed0f060bd6a112c71a02625872932bdd5c57d" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -314,12 +336,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#700403edb523850aa8ee123ff4f8f5e02e8a6ba8" class="src_link" title="spec/features/libraries/show_spec.rb">spec/features/libraries/show_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">69.23 %</td>
-            <td class="cell--number">31</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">23</td>
             <td class="cell--number">13</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">0.92</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.23</td>
             
           </tr>
         
@@ -493,6 +515,178 @@
             
 
             <code class="ruby">    @book = Book.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="a2b410b5196bba7ec4d932001e795b3d18277abf">
+  <div class="header">
+    <h3>app/controllers/libraries_controller.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class LibrariesController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="3">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @library = Library.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="2bbf4b5994c6d9815f6e6d22aeadf630879f8742">
+  <div class="header">
+    <h3>app/controllers/library_authors_controller.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class LibraryAuthorsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @library = Library.find(params[:id])</code>
           </li>
         </div>
       
@@ -3469,8 +3663,8 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3521,6 +3715,50 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/libraries/:id&#39;, to: &#39;libraries#show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/libraries/:id/authors&#39;, to: &#39;library_authors#index&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
             <code class="ruby">end</code>
           </li>
         </div>
@@ -3534,8 +3772,8 @@
   <div class="header">
     <h3>spec/features/libraries/show_spec.rb</h3>
     <h4>
-      <span class="red">
-  69.23%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -3545,8 +3783,8 @@
 
     <div class="t-line-summary">
       <b>13</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <span class="green"><b>13</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -3557,13 +3795,13 @@
     <ol>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="1">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># Story 3 of 3</code>
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
           </li>
         </div>
       
@@ -3574,51 +3812,51 @@
 
             
 
-            <code class="ruby"># As a visitor</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># When I visit a Library&#39;s show page</code>
+            
+
+            <code class="ruby">RSpec.describe &#39;a library show page&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># I see the name of that library</code>
+            
+
+            <code class="ruby">  before :each do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
             
 
-            <code class="ruby"># and i see a link to view all of the authors that have written books that the library has</code>
+            
+
+            <code class="ruby">    @library_1 = Library.create!(name: &#39;Denver Public Library&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
             
 
-            <code class="ruby"># When I click on that link</code>
+            
+
+            <code class="ruby">    @library_2 = Library.create!(name: &#39;Aurora Public Library&#39;)</code>
           </li>
         </div>
       
@@ -3629,29 +3867,29 @@
 
             
 
-            <code class="ruby"># I am taken to a Library&#39;s authors index page</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="8">
+            <span class="hits">2</span>
             
 
-            <code class="ruby"># and I can see a unique list of names of all the authors that this library has</code>
+            
+
+            <code class="ruby">    visit &quot;/libraries/#{@library_1.id}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="9">
+            
             
 
             
 
-            <code class="ruby">require &#39;rails_helper&#39;</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3673,7 +3911,7 @@
 
             
 
-            <code class="ruby">RSpec.describe &#39;a library show page&#39; do</code>
+            <code class="ruby">  context &#39;user story 3&#39; do</code>
           </li>
         </div>
       
@@ -3684,29 +3922,29 @@
 
             
 
-            <code class="ruby">  before :each do</code>
+            <code class="ruby">    it &#39;has the name of the library&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="13">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    @library_1 = Library.create!(name: &#39;Denver Public Library&#39;)</code>
+            <code class="ruby">      expect(page).to have_content(&#39;Denver Public Library&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="14">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    @library_2 = Library.create!(name: &#39;Aurora Public Library&#39;)</code>
+            <code class="ruby">      expect(page).to_not have_content(&#39;Aurora Public Library&#39;)</code>
           </li>
         </div>
       
@@ -3717,100 +3955,12 @@
 
             
 
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="16">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    visit &quot;/libraries/#{@library_1.id}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  context &#39;user story 3&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="20">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;has the name of the library&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="21">
-            
-            
-
-            
-
-            <code class="ruby">      expect(page).to have_content(&#39;Denver Public Library&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="22">
-            
-            
-
-            
-
-            <code class="ruby">      expect(page).to_not have_content(&#39;Aurora Public Library&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
             <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -3821,7 +3971,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
+          <li class="covered" data-hits="1" data-linenumber="17">
             <span class="hits">1</span>
             
 
@@ -3832,8 +3982,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="26">
-            
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
             
 
             
@@ -3843,7 +3993,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -3854,8 +4004,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="28">
-            
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
             
 
             
@@ -3865,7 +4015,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
@@ -3876,7 +4026,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="30">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
@@ -3887,7 +4037,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 

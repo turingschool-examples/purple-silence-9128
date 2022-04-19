@@ -242,6 +242,10 @@
           1,
           null,
           1,
+          null,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -253,14 +257,6 @@
       },
       "/Users/bgann21/Turing/2module/challenges/purple-silence-9128/spec/features/libraries/show_spec.rb": {
         "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
           null,
           1,
@@ -273,14 +269,14 @@
           null,
           1,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           1,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           null
@@ -430,8 +426,26 @@
           1,
           null
         ]
+      },
+      "/Users/bgann21/Turing/2module/challenges/purple-silence-9128/app/controllers/libraries_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/bgann21/Turing/2module/challenges/purple-silence-9128/app/controllers/library_authors_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1650346460
+    "timestamp": 1650347089
   }
 }

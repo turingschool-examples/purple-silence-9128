@@ -1,11 +1,3 @@
-# Story 3 of 3
-# As a visitor
-# When I visit a Library's show page
-# I see the name of that library
-# and i see a link to view all of the authors that have written books that the library has
-# When I click on that link
-# I am taken to a Library's authors index page
-# and I can see a unique list of names of all the authors that this library has
 require 'rails_helper'
 
 RSpec.describe 'a library show page' do
