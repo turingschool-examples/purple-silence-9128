@@ -22,7 +22,11 @@ RSpec.describe "Book Show page" do
     end
 
     it "has name of library" do
-        
-
+        expect(page).to have_content("DCL")
     end
+
+    it 'has a link to authors' do  
+        click_on 'Authors'
+        expect(current_path).to eq("/libraries/#{@lib.id}/authors")
+    end 
 end 

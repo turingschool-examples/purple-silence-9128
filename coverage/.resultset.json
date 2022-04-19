@@ -242,6 +242,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -257,28 +258,32 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
           1,
           1,
           null,
-          1,
-          null,
           null,
           1,
-          null,
-          null,
+          1,
+          1,
           null,
           null
         ]
@@ -407,12 +412,22 @@
         "lines": [
           1,
           1,
+          2,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/reuben/turing/2mod/practice/purple-silence-9128/app/controllers/library_authors_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1650408377
+    "timestamp": 1650409046
   }
 }
