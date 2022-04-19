@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Book show page" do
+RSpec.describe "Library authors index page" do
   let!(:dpl) { Library.create!(name: "Denver Public Library") }
 
   let!(:tolkein) { Author.create!(name: "JRR Tolkein", birth_year: 1892) }
@@ -18,23 +18,12 @@ RSpec.describe "Book show page" do
   let!(:author_book_herbology) { AuthorBook.create!(book_id: herbology.id, author_id: goshawk.id) }
 
   before :each do
-    visit "/books/#{herbology.id}"
+    visit "/libraries/#{dpl.id}/authors"
   end
 
-  it "lists all info for book" do
-    expect(page).to have_content("A Guide to Herbology")
-    expect(page).to_not have_content("Falling Upward")
-    expect(page).to have_content("Nonfiction")
-    expect(page).to_not have_content("Fantasy")
-    # expect(page).to have_content("Dee Henderson")
+  it "lists names of all authors in Library" do
+    expect(page).to have_content("JRR Tolkein")
+    expect(page).to have_content("Richard Rohr")
     expect(page).to have_content("Gerald Goshawk")
-    expect(page).to_not have_content("JRR Tolkein")
-    expect(page).to have_content("Denver Public Library")
-    # can only display one author. @book.authors does not return all authors...WHY?
-    # Book DOES have a "has_many" relationship with :authors through :author_books so why isn't it getting all the authors??
-  end
-
-  it "lists authors average age" do
-    expect(page).to have_content("74")
   end
 end
