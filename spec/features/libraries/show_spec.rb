@@ -56,4 +56,16 @@ RSpec.describe "library show page", type: :feature do
     expect(page).to have_content(@author5.name, count: 1)
     expect(page).not_to have_content(@author6.name)
   end
+
+  it 'shows the 3 most popular authors' do
+    visit "/libraries/#{@library.id}"
+
+    within ".popular_authors" do
+      expect(page).to have_content(@author3.name)
+      expect(page).to have_content(@author2.name)
+      expect(page).to have_content(@author4.name)
+      expect(page).not_to have_content(@author1.name)
+      expect(page).not_to have_content(@author5.name)
+    end
+  end
 end
