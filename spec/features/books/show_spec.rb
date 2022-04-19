@@ -12,11 +12,11 @@ RSpec.describe 'books show page', type: :feature do
     author3 = Author.create!(name: "Shelly Farminghoe", birth_year: "1954")
     author4 = Author.create!(name: "Percy Norris Cheesecake", birth_year: "1973")
 
-    BookAuthor.create!(book: book1, author: author_1)
-    BookAuthor.create!(book: book1, author: author_4)
-    BookAuthor.create!(book: book2, author: author_2)
-    BookAuthor.create!(book: book3, author: author_3)
-    BookAuthor.create!(book: book4, author: author_4)
+    BookAuthor.create!(book: book1, author: author1)
+    BookAuthor.create!(book: book1, author: author4)
+    BookAuthor.create!(book: book2, author: author2)
+    BookAuthor.create!(book: book2, author: author3)
+    BookAuthor.create!(book: book2, author: author4)
 
     visit "/books/#{book2.id}"
     expect(page).to have_content(book2.name)
