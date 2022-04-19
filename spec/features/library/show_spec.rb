@@ -14,12 +14,13 @@ describe "Library Show", type: :feature do
     @author2 = Author.create!(name: "Bad Author", age: 31)
     @author_book2 = AuthorBook.create!(author: @author2, book: @book2)
   end
-  it "displays all authors" do
+  it "links to library index" do
 
-    visit "/libraries/#{@book1.id}"
+    visit "/libraries/#{@library1.id}"
 
     expect(page).to have_content("The Library")
-    expect(page).to have_content()
-    expect(page).to_not have_content("Bad Book")
-    expect(page).to_not have_content("")
+    expect(page).to have_link("All Authors")
+    expect(page).to_not have_content("Cursed Library")
+
   end
+end
