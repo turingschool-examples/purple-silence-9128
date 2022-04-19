@@ -20,8 +20,6 @@ RSpec.describe 'books show page', type: :feature do
   end
 
   it 'has the books name, genre and authors'  do
-
-
     visit book_path(@book2)
     expect(page).to have_content(@book2.title)
     expect(page).to have_content(@book2.genre)

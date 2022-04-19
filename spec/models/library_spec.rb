@@ -48,5 +48,4 @@ RSpec.describe Library, type: :model do
       expect(@library.most_popular_authors).to eq([@author3, @author2, @author4])
     end
   end
-
 end
