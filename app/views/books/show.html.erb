@@ -1,10 +1,13 @@
 <h1> <%= @book.title %> </h1>
-
 <h3> Genre: <%= @book.genre %> </h3>
-<hr/>
+
+<div id="library">
+  <h3>Avaliable at: <%= @book.library.name %> Library</h3>
+</div>
+<hr>
 
 <div id="authors">
-  <h2><%= @book.title %>'s Authors:</h2>
+  <h3><%= @book.title %>'s Authors:</h3>
   <% @book.authors.each do |author| %>
     <p><strong><%= author.name %></strong></p>
   <% end %>
