@@ -22,11 +22,13 @@ ActiveRecord::Schema.define(version: 2022_04_19_023544) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "authors_books", id: false, force: :cascade do |t|
-    t.bigint "book_id", null: false
-    t.bigint "author_id", null: false
+  create_table "book_authors", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "books_id"
+    t.bigint "authors_id"
+    t.index ["authors_id"], name: "index_book_authors_on_authors_id"
+    t.index ["books_id"], name: "index_book_authors_on_books_id"
   end
 
   create_table "books", force: :cascade do |t|
@@ -44,5 +46,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_023544) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "book_authors", "authors", column: "authors_id"
+  add_foreign_key "book_authors", "books", column: "books_id"
   add_foreign_key "books", "libraries"
 end
