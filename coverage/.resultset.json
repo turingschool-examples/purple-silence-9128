@@ -250,25 +250,19 @@
           null
         ]
       },
-      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/spec/models/book_spec.rb": {
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/spec/models/author_book_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
           null,
           null
         ]
       },
-      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/models/book.rb": {
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/models/author_book.rb": {
         "lines": [
           1,
           1,
@@ -283,17 +277,73 @@
           null
         ]
       },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/spec/models/author_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/models/author.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/spec/models/book_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/models/book.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/spec/models/library_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
+          2,
           null,
           null,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -307,6 +357,6 @@
         ]
       }
     },
-    "timestamp": 1650370745
+    "timestamp": 1650373741
   }
 }
