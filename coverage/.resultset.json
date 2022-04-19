@@ -250,9 +250,20 @@
           null
         ]
       },
-      "/Users/vaeliwen/turing/2module/purple-silence-9128/app/models/author.rb": {
+      "/Users/vaeliwen/turing/2module/purple-silence-9128/spec/models/author_spec.rb": {
         "lines": [
           1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/vaeliwen/turing/2module/purple-silence-9128/app/models/author.rb": {
+        "lines": [
           1,
           1,
           null,
@@ -318,7 +329,7 @@
           null
         ]
       },
-      "/Users/vaeliwen/turing/2module/purple-silence-9128/app/models/author_book.rb": {
+      "/Users/vaeliwen/turing/2module/purple-silence-9128/app/models/authors_book.rb": {
         "lines": [
           1,
           1,
@@ -327,6 +338,6 @@
         ]
       }
     },
-    "timestamp": 1650402751
+    "timestamp": 1650403354
   }
 }
