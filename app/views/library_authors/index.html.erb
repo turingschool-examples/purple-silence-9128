@@ -1,1 +1,4 @@
-Here I am!
+<h1><%= "Authors found at #{@library.name}"  %></h1>
+<% @library.authors.order(:name).distinct.each do |author| %>
+  <p><%= author.name %></p>
+<% end %>
