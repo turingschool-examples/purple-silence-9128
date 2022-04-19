@@ -4,11 +4,14 @@ RSpec.describe "books show page" do
   before (:each) do
     @central = Library.create!(name: "Central Public Library")
 
-    @hobbit = @central.books.create!(name: "The Hobbit", genre: "Fantasy")
-    @wrinkle = @central.books.create!(name: "A Wrinkle in Time", genre: "Fantasy")
+    @hobbit = @central.books.create!(title: "The Hobbit", genre: "Fantasy")
+    @wrinkle = @central.books.create!(title: "A Wrinkle in Time", genre: "Fantasy")
 
     @tolkien = Author.create!(name: "Tolkien", birth_year: 1886)
     @engle = Author.create!(name: "L'Engle", birth_year: 1946)
+
+    @ab1 = AuthorBook.create!(book_id: @hobbit.id, author_id: @tolkien.id)
+    @ab2 = AuthorBook.create!(book_id: @wrinkle.id, author_id: @engle.id)
 
   end
   describe "when I visit a book show page" do
