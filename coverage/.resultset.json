@@ -240,13 +240,29 @@
       "/Users/lukepascale/turing/2module/independent/purple-silence-9128/config/routes.rb": {
         "lines": [
           1,
-          null,
+          1,
           null
         ]
       },
       "/Users/lukepascale/turing/2module/independent/purple-silence-9128/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/lukepascale/turing/2module/independent/purple-silence-9128/spec/models/author_book_spec.rb": {
+        "lines": [
+
+        ]
+      },
+      "/Users/lukepascale/turing/2module/independent/purple-silence-9128/spec/models/author_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
           null
         ]
       },
@@ -287,6 +303,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -320,8 +337,24 @@
           1,
           null
         ]
+      },
+      "/Users/lukepascale/turing/2module/independent/purple-silence-9128/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/lukepascale/turing/2module/independent/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650392024
+    "timestamp": 1650395675
   }
 }

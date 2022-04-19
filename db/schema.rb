@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2022_04_19_180127) do
   create_table "author_books", force: :cascade do |t|
     t.bigint "author_id"
     t.bigint "book_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_author_books_on_author_id"
     t.index ["book_id"], name: "index_author_books_on_book_id"
   end
@@ -25,6 +27,8 @@ ActiveRecord::Schema.define(version: 2022_04_19_180127) do
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.integer "birth_year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "books", force: :cascade do |t|
