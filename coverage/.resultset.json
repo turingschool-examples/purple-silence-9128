@@ -282,6 +282,46 @@
           null
         ]
       },
+      "/Users/bgann21/Turing/2module/challenges/purple-silence-9128/spec/features/library_authors/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/bgann21/Turing/2module/challenges/purple-silence-9128/spec/models/author_book_spec.rb": {
         "lines": [
           1,
@@ -440,12 +480,12 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1650347089
+    "timestamp": 1650347553
   }
 }
