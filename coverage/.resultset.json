@@ -241,6 +241,7 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
@@ -355,8 +356,23 @@
           1,
           null
         ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650373741
+    "timestamp": 1650376676
   }
 }
