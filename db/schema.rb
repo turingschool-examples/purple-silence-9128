@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_210200) do
 
   create_table "authors", force: :cascade do |t|
     t.string "name"
+    t.integer "birth_year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
