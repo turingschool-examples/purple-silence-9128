@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-19T10:13:11-04:00">2022-04-19T10:13:11-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-19T10:17:20-04:00">2022-04-19T10:17:20-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -172,7 +172,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#586578e25dc122797316b72668a9e4ede5bb4c70" class="src_link" title="app/models/library.rb">app/models/library.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">17</td>
+            <td class="cell--number">16</td>
             <td class="cell--number">7</td>
             <td class="cell--number">7</td>
             <td class="cell--number">0</td>
@@ -1345,7 +1345,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1356,23 +1356,12 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -4450,7 +4439,7 @@
 
             
 
-            <code class="ruby">    visit &quot;/libraries/#{@library.id}&quot;</code>
+            <code class="ruby">    visit library_path(@library)</code>
           </li>
         </div>
       
@@ -4505,7 +4494,7 @@
 
             
 
-            <code class="ruby">    expect(current_path).to eq(&quot;/libraries/#{@library.id}/authors&quot;)</code>
+            <code class="ruby">    expect(current_path).to eq(library_authors_path(@library))</code>
           </li>
         </div>
       
@@ -4626,7 +4615,7 @@
 
             
 
-            <code class="ruby">    visit &quot;/libraries/#{@library.id}&quot;</code>
+            <code class="ruby">    visit library_path(@library)</code>
           </li>
         </div>
       

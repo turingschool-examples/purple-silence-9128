@@ -42,12 +42,12 @@ RSpec.describe "library show page", type: :feature do
   end
 
   it 'shows the library info and a link to the authors' do
-    visit "/libraries/#{@library.id}"
+    visit library_path(@library)
     expect(page).to have_content(@library.name)
     expect(page).not_to have_content(@library2.name)
 
     click_link("Authors")
-    expect(current_path).to eq("/libraries/#{@library.id}/authors")
+    expect(current_path).to eq(library_authors_path(@library))
 
     expect(page).to have_content(@author1.name, count: 1)
     expect(page).to have_content(@author2.name, count: 1)
@@ -58,7 +58,7 @@ RSpec.describe "library show page", type: :feature do
   end
 
   it 'shows the 3 most popular authors' do
-    visit "/libraries/#{@library.id}"
+    visit library_path(@library)
 
     within ".popular_authors" do
       expect(page).to have_content(@author3.name)

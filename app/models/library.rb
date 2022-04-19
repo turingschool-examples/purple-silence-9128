@@ -11,7 +11,6 @@ class Library < ApplicationRecord
     .order(count: :desc)
     .limit(3)
     # require "pry"; binding.pry
-
   end
 
 end

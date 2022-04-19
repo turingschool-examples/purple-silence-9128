@@ -22,7 +22,7 @@ RSpec.describe 'books show page', type: :feature do
   it 'has the books name, genre and authors'  do
 
 
-    visit "/books/#{@book2.id}"
+    visit book_path(@book2)
     expect(page).to have_content(@book2.title)
     expect(page).to have_content(@book2.genre)
     expect(page).to have_content(@author2.name)
@@ -34,10 +34,10 @@ RSpec.describe 'books show page', type: :feature do
   end
 
   it 'shows the average age of the authors for the book' do
-    visit "/books/#{@book1.id}"
+    visit book_path(@book1)
     expect(page).to have_content("Authors Average Age: 50")
 
-    visit "/books/#{@book2.id}"
+    visit book_path(@book2)
     expect(page).to have_content("Authors Average Age: 39.7")
     expect(page).not_to have_content("Authors Average Age: 39.6667")
   end
