@@ -9,4 +9,8 @@ class Author < ApplicationRecord
     end
   x.sum / x.size
   end
+
+  def self.list_of_authors
+    Author.order(:name).distinct
+  end
 end
