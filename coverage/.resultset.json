@@ -241,6 +241,7 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
@@ -347,8 +348,25 @@
           1,
           null
         ]
+      },
+      "/Users/susanboyd/turing/2module/5week/purple-silence-9128/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/susanboyd/turing/2module/5week/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650371463
+    "timestamp": 1650371698
   }
 }

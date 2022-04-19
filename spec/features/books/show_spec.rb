@@ -19,13 +19,13 @@ RSpec.describe 'books show page', type: :feature do
     BookAuthor.create!(book: book2, author: author4)
 
     visit "/books/#{book2.id}"
-    expect(page).to have_content(book2.name)
+    expect(page).to have_content(book2.title)
     expect(page).to have_content(book2.genre)
     expect(page).to have_content(author2.name)
     expect(page).to have_content(author3.name)
     expect(page).to have_content(author4.name)
     expect(page).to have_content(library.name)
-    expect(page).not_to have_content(book1.name)
+    expect(page).not_to have_content(book1.title)
     expect(page).not_to have_content(author1.name)
   end
 end
