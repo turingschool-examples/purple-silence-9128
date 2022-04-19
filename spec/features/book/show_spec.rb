@@ -55,6 +55,6 @@ RSpec.describe "Book Show page" do
         BookAuthor.create(book_id: @book1.id, author_id: @author2.id)
 
         visit "/books/#{@book1.id}"
-        expect(page).to have_content("Average age: 30")
+        expect(page).to have_content("Average age: 31")
     end 
 end
