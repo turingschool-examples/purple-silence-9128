@@ -66,7 +66,7 @@ When I visit a Library's show page
 I see the name of that library
 and i see a link to view all of the authors that have written books that the library has
 When I click on that link
-I am taken to a Library's authors index page 
+I am taken to a Library's authors index page
 and I can see a unique list of names of all the authors that this library has
 ```
 
@@ -77,3 +77,4 @@ When I visit a library's show page
 I can see the three most popular authors that are available in the library
 (Popularity is based on how many books the author has in the library)
 ```
+start time - 8:18 pm mst
