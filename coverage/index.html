@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-19T10:29:22-04:00">2022-04-19T10:29:22-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-04-19T10:41:53-04:00">2022-04-19T10:41:53-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.26
+         1.27
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>189</b> relevant lines,
-    <span class="green"><b>189</b> lines covered</span> and
+    <b>190</b> relevant lines,
+    <span class="green"><b>190</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -172,7 +172,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#586578e25dc122797316b72668a9e4ede5bb4c70" class="src_link" title="app/models/library.rb">app/models/library.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">16</td>
+            <td class="cell--number">15</td>
             <td class="cell--number">7</td>
             <td class="cell--number">7</td>
             <td class="cell--number">0</td>
@@ -337,11 +337,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#762ea880bf60dd4b61910c57cc69df93fa548687" class="src_link" title="spec/features/libraries/show_spec.rb">spec/features/libraries/show_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">71</td>
-            <td class="cell--number">51</td>
-            <td class="cell--number">51</td>
+            <td class="cell--number">72</td>
+            <td class="cell--number">52</td>
+            <td class="cell--number">52</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.55</td>
+            <td class="cell--number">1.56</td>
             
           </tr>
         
@@ -1334,7 +1334,7 @@
 
             
 
-            <code class="ruby">    # require &quot;pry&quot;; binding.pry</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1345,23 +1345,12 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -3936,8 +3925,8 @@
     
 
     <div class="t-line-summary">
-      <b>51</b> relevant lines.
-      <span class="green"><b>51</b> lines covered</span> and
+      <b>52</b> relevant lines.
+      <span class="green"><b>52</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4400,13 +4389,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="42">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    BookAuthor.create!(book: @book7, author: @author3)</code>
           </li>
         </div>
       
@@ -4417,18 +4406,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="44">
+            
             
 
             
 
-            <code class="ruby">  it &#39;shows the library info and a link to the authors&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4439,7 +4428,7 @@
 
             
 
-            <code class="ruby">    visit library_path(@library)</code>
+            <code class="ruby">  it &#39;shows the library info and a link to the authors&#39; do</code>
           </li>
         </div>
       
@@ -4450,7 +4439,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@library.name)</code>
+            <code class="ruby">    visit library_path(@library)</code>
           </li>
         </div>
       
@@ -4461,29 +4450,29 @@
 
             
 
+            <code class="ruby">    expect(page).to have_content(@library.name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).not_to have_content(@library2.name)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="48">
+          <li class="never" data-hits="" data-linenumber="49">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="49">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_link(&quot;Authors&quot;)</code>
           </li>
         </div>
       
@@ -4494,29 +4483,29 @@
 
             
 
+            <code class="ruby">    click_link(&quot;Authors&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(current_path).to eq(library_authors_path(@library))</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="51">
+          <li class="never" data-hits="" data-linenumber="52">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="52">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(@author1.name, count: 1)</code>
           </li>
         </div>
       
@@ -4527,7 +4516,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@author2.name, count: 1)</code>
+            <code class="ruby">    expect(page).to have_content(@author1.name, count: 1)</code>
           </li>
         </div>
       
@@ -4538,7 +4527,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@author3.name, count: 1)</code>
+            <code class="ruby">    expect(page).to have_content(@author2.name, count: 1)</code>
           </li>
         </div>
       
@@ -4549,7 +4538,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@author4.name, count: 1)</code>
+            <code class="ruby">    expect(page).to have_content(@author3.name, count: 1)</code>
           </li>
         </div>
       
@@ -4560,7 +4549,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(@author5.name, count: 1)</code>
+            <code class="ruby">    expect(page).to have_content(@author4.name, count: 1)</code>
           </li>
         </div>
       
@@ -4571,18 +4560,18 @@
 
             
 
-            <code class="ruby">    expect(page).not_to have_content(@author6.name)</code>
+            <code class="ruby">    expect(page).to have_content(@author5.name, count: 1)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    expect(page).not_to have_content(@author6.name)</code>
           </li>
         </div>
       
@@ -4593,18 +4582,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="60">
+            
             
 
             
 
-            <code class="ruby">  it &#39;shows the 3 most popular authors&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4615,12 +4604,23 @@
 
             
 
+            <code class="ruby">  it &#39;shows the 3 most popular authors&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    visit library_path(@library)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="62">
+          <li class="never" data-hits="" data-linenumber="63">
             
             
 
@@ -4631,7 +4631,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
+          <li class="covered" data-hits="1" data-linenumber="64">
             <span class="hits">1</span>
             
 
@@ -4642,7 +4642,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="64">
+          <li class="covered" data-hits="1" data-linenumber="65">
             <span class="hits">1</span>
             
 
@@ -4653,7 +4653,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="65">
+          <li class="covered" data-hits="1" data-linenumber="66">
             <span class="hits">1</span>
             
 
@@ -4664,7 +4664,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="66">
+          <li class="covered" data-hits="1" data-linenumber="67">
             <span class="hits">1</span>
             
 
@@ -4675,7 +4675,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="67">
+          <li class="covered" data-hits="1" data-linenumber="68">
             <span class="hits">1</span>
             
 
@@ -4686,7 +4686,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="68">
+          <li class="covered" data-hits="1" data-linenumber="69">
             <span class="hits">1</span>
             
 
@@ -4697,7 +4697,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="69">
+          <li class="never" data-hits="" data-linenumber="70">
             
             
 
@@ -4708,7 +4708,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
+          <li class="never" data-hits="" data-linenumber="71">
             
             
 
@@ -4719,7 +4719,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="71">
+          <li class="never" data-hits="" data-linenumber="72">
             
             
 

@@ -39,6 +39,7 @@ RSpec.describe "library show page", type: :feature do
     @book7 = @library2.books.create!(title: "No Goats Here", genre: "romance")
     @author6 = Author.create!(name: "Mandy Pollyana", birth_year: 1984)
     BookAuthor.create!(book: @book7, author: @author6)
+    BookAuthor.create!(book: @book7, author: @author3)
   end
 
   it 'shows the library info and a link to the authors' do
