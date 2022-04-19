@@ -27,7 +27,7 @@ RSpec.describe 'Book Show Page', type: :feature do
     visit book_path(@book_1.id)
 
     within("#book-#{@book_1.id}") do
-      expect(page).to have_content("Average age: 70")
+      expect(page).to have_content("Average age of authors: 70")
     end
   end
 end
