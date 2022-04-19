@@ -1,0 +1,7 @@
+<h1> <%= "#{@library.name} %>   </h1>
+
+
+<h1>Authors</h1>
+<% @library.authors.each do |name| %>
+<p> <h2> <%= name %> </h2> </p>
+<% end %>
