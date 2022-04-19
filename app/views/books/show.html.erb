@@ -2,6 +2,7 @@
 <h3><%= @book.genre %></h3>
 <div id="authors">
     <ul> Authors: 
+    <hr>
          <% @book.authors.each do |author| %>
             <li>
                 <%= author.name  %>
