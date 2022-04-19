@@ -26,35 +26,35 @@ RSpec.describe 'Books#Show' do
   end
 
   it "displays a book's title, genre, and a list of all authors" do
-    visit "/books/@book1.id"
+    visit "/books/#{@book1.id}"
 
-    expect(page).to have_contents(@book1.title)
-    expect(page).to have_contents(@book1.genre)
-    expect(page).to have_contents(@book1.authors[0].name)
+    expect(page).to have_content(@book1.title)
+    expect(page).to have_content(@book1.genre)
+    expect(page).to have_content(@book1.authors[0].name)
 
-    visit "/books/@book2.id"
+    visit "/books/#{@book2.id}"
 
-    expect(page).to have_contents(@book2.title)
-    expect(page).to have_contents(@book2.genre)
-    expect(page).to have_contents(@book2.authors[0].name)
+    expect(page).to have_content(@book2.title)
+    expect(page).to have_content(@book2.genre)
+    expect(page).to have_content(@book2.authors[0].name)
 
-    visit "/books/@book3.id"
+    visit "/books/#{@book3.id}"
 
-    expect(page).to have_contents(@book3.title)
-    expect(page).to have_contents(@book3.genre)
-    expect(page).to have_contents(@book3.authors[0].name)
+    expect(page).to have_content(@book3.title)
+    expect(page).to have_content(@book3.genre)
+    expect(page).to have_content(@book3.authors[0].name)
 
-    visit "/books/@book4.id"
+    visit "/books/#{@book4.id}"
 
-    expect(page).not_to have_contents(@book1.title)
-    expect(page).not_to have_contents(@book2.title)
-    expect(page).not_to have_contents(@book3.title)
+    expect(page).not_to have_content(@book1.title)
+    expect(page).not_to have_content(@book2.title)
+    expect(page).not_to have_content(@book3.title)
 
-    visit "/books/@book5.id"
+    visit "/books/#{@book5.id}"
 
-    expect(page).to have_contents(@book1.title)
-    expect(page).to have_contents(@book1.genre)
-    expect(page).to have_contents(@book1.authors[0].name)
-    expect(page).to have_contents(@book1.authors[1].name)
+    expect(page).to have_content(@book5.title)
+    expect(page).to have_content(@book5.genre)
+    expect(page).to have_content(@book5.authors[0].name)
+    expect(page).to have_content(@book5.authors[1].name)
   end
 end
