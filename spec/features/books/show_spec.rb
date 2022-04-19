@@ -1,22 +1,36 @@
 require 'rails_helper'
 
 RSpec.describe 'book show page' do
-
-  # Story 1 of 3
-  # As a visitor, when I visit a book's show page
-  # I see the book's name and genre
-  # And I see a list of authors for that book.
-  # And I see the name of the Library it belongs to
   it 'displays the book details' do
     library = Library.create!(name: 'Denver Public Library')
-    book = library.books.create!(title: 'Foundation', genre: 'Sci-fi')
-    author = book.authors.create!(name: 'Isaac Asimov', birth_year: 1920)
+    book = library.books.create!(title: 'Elements of Style', genre: 'Style Guides')
+    author = book.authors.create!(name: 'William Strunk', birth_year: 1945)
+    author_1 = book.authors.create!(name: 'E.B. White', birth_year: 1950)
+
     visit "/books/#{book.id}"
-    expect(page).to have_content('Foundation')
-    expect(page).to have_content('Sci-fi')
-    expect(page).to have_content('Isaac Asimov')
+
+    expect(page).to have_content('Elements of Style')
+    expect(page).to have_content('Style Guides')
+    expect(page).to have_content('William Strunk')
+    expect(page).to have_content('E.B. White')
     expect(page).to have_content('Denver Public Library')
-    save_and_open_page
+  end
+
+  # Story 2 of 3
+  # As a visitor
+  # when I visit a book's show page
+  # I see the average age of the authors for that book
+  # ```
+
+  it 'displays the average age of the authors' do
+    library = Library.create!(name: 'Denver Public Library')
+    book = library.books.create!(title: 'Elements of Style', genre: 'Style Guides')
+    author = book.authors.create!(name: 'William Strunk', birth_year: 1945)
+    author_1 = book.authors.create!(name: 'E.B. White', birth_year: 1950)
+
+    visit "/books/#{book.id}"
+
+    expect(page).to have_content('Average age of authors: 74.5')
   end
 
 end
