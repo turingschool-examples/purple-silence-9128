@@ -90,9 +90,9 @@ describe 'book show page' do
 
     it 'shows the name of the library the book belongs too' do
       within "#library" do
-        expect(page).to have_content("Avaliable at: Greenie")
+        expect(page).to have_content("Avaliable at: Greenie Library")
 
-        expect(page).not_to have_content("Avaliable at: Delware")
+        expect(page).not_to have_content("Avaliable at: Delware Library")
       end
     end
   end
