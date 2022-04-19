@@ -1,6 +1,7 @@
 <h3><%= @book.title %></h3>
 <p><b>Genre:</b><%= @book.genre %></p>
-<p><b>Authors:</b></br>
+<p><b>Average Author's Age:</b> <%= @book.authors.average_age %></p>
+<p><b>All Associated Authors:</b></br>
   <ul>
     <%= @book.authors.each do |author| %>
       <li><%= author.name %></li>

@@ -4,4 +4,8 @@ class Author < ApplicationRecord
   has_many :libraries, through: :books
 
   validates_presence_of :name, :age
+
+  def self.average_age
+    average(:age)
+  end
 end
