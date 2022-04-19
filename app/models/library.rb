@@ -8,4 +8,7 @@ class Library < ApplicationRecord
     author_list = authors.select(:name).distinct
     author_list.map {|author| author.name}
   end
+
+  # def most_popular_authors
+  # end
 end
