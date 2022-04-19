@@ -5,4 +5,8 @@ class Author < ApplicationRecord
   has_many :book_authors
   has_many :books, through: :book_authors
   has_many :libraries, through: :books
+
+  def author_age
+    2022 - birth_year
+  end
 end

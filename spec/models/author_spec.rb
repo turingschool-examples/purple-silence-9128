@@ -12,4 +12,11 @@ RSpec.describe Author, type: :model do
     it { should have_many(:books).through(:book_authors) }
     it { should have_many(:libraries).through(:books) }
   end
+
+  describe "Author Age" do
+    it "should return age of an Author" do
+      author1 = Author.create!(name: "Mike Dao", birth_year: 1985)
+      expect(author1.author_age).to eq(37)
+    end
+  end
 end

@@ -4,4 +4,7 @@ class Book < ApplicationRecord
   belongs_to :library
   has_many :book_authors
   has_many :authors, through: :book_authors
+
+  def avg_age_of_authors
+  end
 end
