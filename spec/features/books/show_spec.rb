@@ -1,8 +1,3 @@
-# Story 1 of 3
-# As a visitor, when I visit a book's show page
-# I see the book's name and genre
-# And I see a list of authors for that book.
-# And I see the name of the Library it belongs to
 require 'rails_helper'
 
 RSpec.describe 'a books show page' do
@@ -24,7 +19,7 @@ RSpec.describe 'a books show page' do
     visit "/books/#{@book_1.id}"
   end
 
-  context 'user_story_1' do
+  context 'user story 1' do
     it 'shows the name and genre' do
       expect(page).to have_content('Epic Quest')
       expect(page).to have_content('Genre: Adventure')
@@ -41,6 +36,12 @@ RSpec.describe 'a books show page' do
     it 'shows the name of the library it belongs to' do
       expect(page).to have_content('Denver Public Library')
       expect(page).to_not have_content('Aurora Public Library')
+    end
+  end
+
+  context 'user story 2' do
+    it 'shows the average age of authors for the book' do
+      expect(page).to have_content("Average age of authors: 606")
     end
   end
 end
