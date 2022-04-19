@@ -88,7 +88,7 @@ describe 'book show page' do
       end
     end
 
-    xit 'shows the name of the library the book belongs too' do
+    it 'shows the name of the library the book belongs too' do
       within "#library" do
         expect(page).to have_content("Avaliable at: Greenie")
 
