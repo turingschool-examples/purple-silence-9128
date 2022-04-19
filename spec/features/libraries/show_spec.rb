@@ -25,8 +25,9 @@ RSpec.describe 'the Library show page' do
 
     click_link "View All Authors"
 
-
+    expect(page).to have_content("JRR Tolkein")
+    expect(page).to have_content("Brando Sando")
   end
-  
+
   it 'displays a unique list of names of all authors the library has'
 end
