@@ -1,4 +1,9 @@
 <h1> <%= @library.name %> </h1>
 
-
+<div class="popular_authors">
+<h3>Most Popular Authors</h3>
+<% @library.most_popular_authors.each do |author| %>
+  <%= author.name %>
+  <% end %>
+</div>
 <%= link_to "Authors", library_authors_path(@library) %>
