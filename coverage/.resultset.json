@@ -242,12 +242,46 @@
           1,
           null,
           1,
+          null,
+          1,
+          1,
           null
         ]
       },
       "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/spec/features/libraries/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -358,6 +392,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -375,8 +410,26 @@
           1,
           null
         ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/controllers/libraries_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/aliciawatt/turing/2module/independent_challenges/purple-silence-9128/app/controllers/library_authors_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1650377879
+    "timestamp": 1650381908
   }
 }
