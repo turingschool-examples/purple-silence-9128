@@ -16,12 +16,6 @@ RSpec.describe 'book show page' do
     expect(page).to have_content('Denver Public Library')
   end
 
-  # Story 2 of 3
-  # As a visitor
-  # when I visit a book's show page
-  # I see the average age of the authors for that book
-  # ```
-
   it 'displays the average age of the authors' do
     library = Library.create!(name: 'Denver Public Library')
     book = library.books.create!(title: 'Elements of Style', genre: 'Style Guides')
