@@ -28,12 +28,14 @@ RSpec.describe 'Books#Show' do
   it "displays a book's title, genre, and a list of all authors" do
     visit "/books/#{@book1.id}"
 
+    # Does it show the right contents?
     expect(page).to have_content(@book1.title)
     expect(page).to have_content(@book1.genre)
     expect(page).to have_content(@book1.authors[0].name)
 
     visit "/books/#{@book2.id}"
 
+    # ... Accross multiple records?
     expect(page).to have_content(@book2.title)
     expect(page).to have_content(@book2.genre)
     expect(page).to have_content(@book2.authors[0].name)
@@ -46,12 +48,14 @@ RSpec.describe 'Books#Show' do
 
     visit "/books/#{@book4.id}"
 
+    # Does it exclude other records?
     expect(page).not_to have_content(@book1.title)
     expect(page).not_to have_content(@book2.title)
     expect(page).not_to have_content(@book3.title)
 
     visit "/books/#{@book5.id}"
 
+    # When more than one author exists, are all shown?
     expect(page).to have_content(@book5.title)
     expect(page).to have_content(@book5.genre)
     expect(page).to have_content(@book5.authors[0].name)
