@@ -1,5 +1,3 @@
-<% @library.books.each do |book| %>
-  <% book.authors.each do |author| %>
-  <p> <%= author.name %> </p>
-  <% end %>
+<% @library.unique_author_list.each do |author| %>
+  <p> <%= author %> </p>
 <% end %>
