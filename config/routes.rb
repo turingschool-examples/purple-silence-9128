@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/book/:id', to: 'books#show'
+  get '/library/:id', to: 'libraries#show'
+  get '/library/:library_id/authors', to: 'library_authors#index'
 end

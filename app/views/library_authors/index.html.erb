@@ -1,0 +1,6 @@
+<h1><%= @library.name %> authors</h1>
+<div id="authors">
+  <% @authors.distinct.each do |author| %>
+    <p><%= author.name %></p>
+  <% end %>
+</div>
