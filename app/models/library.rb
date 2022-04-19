@@ -5,7 +5,11 @@ class Library < ApplicationRecord
   has_many :book_authors, through: :books
 
   def most_popular_authors
-    wip = authors.joins(:books).select("authors.*, count(books) as count").group("authors.id").order(count: :desc).limit(3)
+    authors.joins(:books)
+    .select("authors.*, count(books) as count")
+    .group("authors.id")
+    .order(count: :desc)
+    .limit(3)
     # require "pry"; binding.pry
 
   end
