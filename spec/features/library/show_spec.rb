@@ -22,5 +22,9 @@ describe "Library Show", type: :feature do
     expect(page).to have_link("All Authors")
     expect(page).to_not have_content("Cursed Library")
 
+    click_link("All Authors")
+
+    expect(page).to have_current_path("/libraries/#{@library1.id}/authors")
+
   end
 end

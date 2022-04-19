@@ -245,6 +245,7 @@
           1,
           null,
           1,
+          1,
           null,
           null
         ]
@@ -279,6 +280,10 @@
           null,
           1,
           1,
+          1,
+          null,
+          1,
+          null,
           1,
           null,
           null,
@@ -449,8 +454,17 @@
           null,
           null
         ]
+      },
+      "/Users/pistachiojoe/turing/mod2/2proj/3ic/purple-silence-9128/app/controllers/authors_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1650410560
+    "timestamp": 1650411090
   }
 }
