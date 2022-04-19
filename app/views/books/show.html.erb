@@ -1,0 +1,11 @@
+<h1><%= @book.title %></h1>
+<h4>Genre: <%= @book.genre %></h4>
+
+<h4>Authors:</h4>
+<% @book.authors.each do |author| %>
+  <p><%= author.name %></p>
+<% end %><br>
+
+<p>Average age of authors: <%= @book.average_age_of_authors %></p>
+
+<p>Can be found in: <%= @book.library.name %></p>
