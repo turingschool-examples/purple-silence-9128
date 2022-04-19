@@ -8,10 +8,12 @@ RSpec.describe "books show page" do
     @wrinkle = @central.books.create!(title: "A Wrinkle in Time", genre: "Fantasy")
 
     @tolkien = Author.create!(name: "Tolkien", birth_year: 1886)
+    @fake = Author.create!(name: "Faker", birth_year: 1906)
     @engle = Author.create!(name: "L'Engle", birth_year: 1946)
 
     @ab1 = AuthorBook.create!(book_id: @hobbit.id, author_id: @tolkien.id)
     @ab2 = AuthorBook.create!(book_id: @wrinkle.id, author_id: @engle.id)
+    @ab3 = AuthorBook.create!(book_id: @hobbit.id, author_id: @fake.id)
 
   end
   describe "when I visit a book show page" do
@@ -35,7 +37,12 @@ RSpec.describe "books show page" do
       visit "/books/#{@hobbit.id}"
 
       expect(page).to have_content("Central Public Library")
+    end
 
+    it "displays the average age of the authors" do
+      visit "/books/#{@hobbit.id}"
+
+      expect(page).to have_content("126")
     end
   end
 end

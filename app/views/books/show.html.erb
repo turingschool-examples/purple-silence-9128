@@ -4,3 +4,4 @@ Genre: <%= @book.genre %>
   <%= "Author: #{author.name}" %>
 <% end %>
 Found at: <%= @book.library.name %>
+<%= "Average Age of Authors: #{@book.authors.average_age}" %>
