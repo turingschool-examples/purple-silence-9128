@@ -5,3 +5,4 @@
 <% @book.authors.each do |author| %>
 <p> <%= author.name %></p>
 <% end %>
+<p>Authors Average Age: <%= @book.authors.average_age %></p>
