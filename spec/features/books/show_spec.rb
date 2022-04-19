@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Books Show" do
-  it 'displays a list of all of books authors and genre' do
+  it 'displays book name and a list of all of books authors and genre' do
     author_1 = Author.create(name: "Author One", birthyear: 1942)
     author_2 = Author.create(name: "Author Two", birthyear: 1962)
     author_3 = Author.create(name: "Author Three", birthyear: 1982)
