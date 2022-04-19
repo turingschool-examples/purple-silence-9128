@@ -17,4 +17,8 @@ RSpec.describe "Books Show" do
     expect(page).to have_content("Author One")
     expect(page).to have_content("Author Two")
     expect(page).to have_content("Genre1")
+    expect(page).to have_content("Library One")
   end
+
+  
+end

@@ -1,4 +1,13 @@
 <h1> <%= "#{@book.title}" %> </h1>
 
+
+
 <section id="authors">
-<<h2>Authors</h2>
+  <<h2><b>Authors</b></h2>
+  <% @book.authors_name.each do |author| %>
+  <h3> <%= author %> </h3><br>
+  <% end %>
+
+  <h2>Genre: </h2><%= "#{@book.genre}" %>
+  <h2>Location: </h2><%= "#{@book.library.name}" %>
+  </section>
