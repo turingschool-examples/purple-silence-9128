@@ -241,6 +241,7 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
@@ -351,8 +352,23 @@
           1,
           null
         ]
+      },
+      "/Users/bgann21/Turing/2module/challenges/purple-silence-9128/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/bgann21/Turing/2module/challenges/purple-silence-9128/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650344566
+    "timestamp": 1650344951
   }
 }
