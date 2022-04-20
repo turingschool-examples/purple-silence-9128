@@ -21,3 +21,5 @@ RSpec.describe "Library Show Page", type: :feature do
         expect(page).to have_content(author.name)
       end
     end
+  end
+end
