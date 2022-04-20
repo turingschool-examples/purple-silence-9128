@@ -250,9 +250,8 @@
           null
         ]
       },
-      "/Users/scottsullivan/turing/2module/ic/purple-silence-9128/app/models/author.rb": {
+      "/Users/scottsullivan/turing/2module/ic/purple-silence-9128/app/models/book.rb": {
         "lines": [
-          1,
           1,
           1,
           null,
@@ -272,8 +271,42 @@
           1,
           null
         ]
+      },
+      "/Users/scottsullivan/turing/2module/ic/purple-silence-9128/app/models/library.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/scottsullivan/turing/2module/ic/purple-silence-9128/app/models/author.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/scottsullivan/turing/2module/ic/purple-silence-9128/app/models/book_author.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1650410671
+    "timestamp": 1650412625
   }
 }
