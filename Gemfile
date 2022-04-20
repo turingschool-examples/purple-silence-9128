@@ -18,6 +18,7 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'orderly'
 end
 
 group :development do

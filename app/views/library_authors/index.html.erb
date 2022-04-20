@@ -1,0 +1,12 @@
+<h1><%= @library.name %>'s Author Index</h1>
+
+<br>
+<hr>
+<ul>
+    <li> 
+        <%  @library.books.authors.each do |book| %>
+        <%= author.name %>
+        <%  end   %>
+    </li>
+
+</ul>

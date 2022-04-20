@@ -1,15 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Library, type: :model do
-  describe 'validations' do
-    it { should validate_presence_of :name }
-  end
-  
-  describe 'relationships' do
-    it { should have_many :books }
-  end
-
-  describe 'instance method' do 
+RSpec.describe "Book Show page" do
     before :each do 
         @lib = Library.create!(name: "DCL")
         @book1 = @lib.books.create!(title: "Where Red Fern", genre: 'fiction')
@@ -27,11 +18,15 @@ RSpec.describe Library, type: :model do
         BookAuthor.create!(book_id: @book4.id, author_id: @author2.id)
         BookAuthor.create!(book_id: @book2.id, author_id: @author3.id)
 
+        visit "/libraries/#{@lib.id}"
     end
 
-    it "returns list of unique authors" do 
-      binding.pry
-      expect(@lib.uniq_authors).to eq([@author1, @author2, @author3])
+    it "has name of library" do
+        expect(page).to have_content("DCL")
     end
-  end
+
+    it 'has a link to authors' do  
+        click_on 'Authors'
+        expect(current_path).to eq("/libraries/#{@lib.id}/authors")
+    end 
 end 
