@@ -77,6 +77,6 @@ describe 'library show page' do
     expect(page).not_to have_content('Delware Library')
 
     click_link("Greenie's Authors")
-    expect(current_path).to eq("/libraries/#{@lib_2.id}/authors")
+    expect(current_path).to eq(library_authors_path(@lib_2))
   end
 end
