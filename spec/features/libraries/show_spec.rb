@@ -21,10 +21,10 @@ RSpec.describe 'library show page' do
 
     click_link "Authors Index"
     expect(current_path).to eq("/libraries/#{library.id}/authors")
-    expect(page).to have_content('William Strunk')
-    expect(page).to have_content('E.B. White')
-    expect(page).to have_content('Jacob Grimm')
-    expect(page).to have_content('Wilhelm Grimm')
+    expect(page).to have_content('William Strunk', count: 1)
+    expect(page).to have_content('E.B. White', count: 1)
+    expect(page).to have_content('Jacob Grimm', count: 1)
+    expect(page).to have_content('Wilhelm Grimm', count: 1)
   end
 
   # Extension
